@@ -14,7 +14,7 @@ const images = [
 export default function Home() {
     return (
         <div className="w-full flex flex-col items-center">
-            <div className="w-full h-screen relative">
+            <div className="w-full h-[500px] md:h-screen relative">
                 <Slideshow images={images} />
             </div>
 
