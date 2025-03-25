@@ -10,12 +10,19 @@ body {
 
 nav {
   background-color: rgba(0,0,0,0.5);
-  backdrop-filter: blur(1px);
- -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+ border-bottom: .15rem solid rgba(255,255,255,0.2);
+}
+
+.tint {
+  background-color: rgba(0,0,0,0.7);
+  backdrop-filter: blur(0.01rem);
+ -webkit-backdrop-filter: blur(0.01rem);
 }
 
 .carbon {
-  background-color: #000421;
+  background-color: #020836;
   background-image: url("/image/real-carbon-fibre.png");
   z-index: -5;
 }
