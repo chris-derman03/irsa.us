@@ -1,5 +1,4 @@
 import Slideshow from "./Components/Slideshow/Slideshow";
-import { shuffle } from "fast-shuffle";
 
 const images = [
     { path: "/image/home/biomechanics.jpg", desc: "Biomechanical Analysis" },
@@ -16,7 +15,7 @@ export default function Home() {
     return (
         <div className="w-full flex flex-col items-center">
             <div className="w-full h-screen relative">
-                <Slideshow images={shuffle(images)} />
+                <Slideshow images={images} />
             </div>
 
             <h1 className="w-[100px]">

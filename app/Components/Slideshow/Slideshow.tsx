@@ -1,7 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
-import SlideshowContent from "./SlideshowContent";
+// import SlideshowContent from "./SlideshowContent";
+import Image from "next/image";
 import Tint from "../Tint";
+import { shuffle } from "fast-shuffle";
+import "./SlideshowStyles.css";
 
 interface Params {
     images: { path: string; desc: string }[];
@@ -12,10 +15,17 @@ interface Params {
 const Slideshow = ({
     images,
     intervalDelay = 7000,
-    fadeDuration = 5000,
+    fadeDuration = 3000,
 }: Params) => {
+    const [shuffledImages, setShuffledImages] = useState<
+        { path: string; desc: string }[] | null
+    >(null);
     const [index, setIndex] = useState(0);
     const [isFading, setFading] = useState(false);
+
+    useEffect(() => {
+        setShuffledImages(shuffle(images));
+    }, [images]);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -27,15 +37,36 @@ const Slideshow = ({
         }, intervalDelay);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [images.length, fadeDuration, intervalDelay]);
 
     return (
         <div className="w-full h-full relative">
-            <SlideshowContent
-                images={images}
-                index={index}
-                isFading={isFading}
-            />
+            <div className="w-full h-full absolute">
+                {shuffledImages ? (
+                    shuffledImages.map((image, i) => (
+                        <Image
+                            src={image.path}
+                            alt={image.desc}
+                            fill
+                            className="object-cover slideshowImage"
+                            style={{
+                                opacity:
+                                    i === index
+                                        ? isFading
+                                            ? 0
+                                            : 1
+                                        : i === (index + 1) % images.length &&
+                                          isFading
+                                        ? 1
+                                        : 0,
+                            }}
+                            key={"home_image_" + i}
+                        />
+                    ))
+                ) : (
+                    <div />
+                )}
+            </div>
 
             <Tint />
         </div>
