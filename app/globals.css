@@ -15,6 +15,10 @@ nav {
  border-bottom: .15rem solid rgba(255,255,255,0.2);
 }
 
+.slideshowImage {
+  transition: opacity 2s ease-in-out;
+}
+
 .tint {
   background-color: rgba(0,0,0,0.7);
   backdrop-filter: blur(0.01rem);
