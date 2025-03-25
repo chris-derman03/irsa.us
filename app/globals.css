@@ -7,3 +7,19 @@ body {
   background-color: theme("colors.slate.950");
   color: white;
 }
+
+nav {
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(1px);
+ -webkit-backdrop-filter: blur(1px);
+}
+
+.carbon {
+  background-color: #000421;
+  background-image: url("/image/real-carbon-fibre.png");
+  z-index: -5;
+}
+
+.vignette {
+  box-shadow: 0 0 200px rgba(0,0,0,0.5) inset;
+}
