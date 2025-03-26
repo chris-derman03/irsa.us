@@ -1,3 +1,4 @@
+import OverlayBox from "./Components/OverlayBox";
 import Slideshow from "./Components/Slideshow/Slideshow";
 
 const images = [
@@ -15,10 +16,12 @@ export default function Home() {
     return (
         <div className="flex flex-col items-center">
             <div className="w-full h-[500px] md:h-screen relative">
-                <Slideshow images={images} />
-                <div className="h-full flex items-center justify-center z-20">
-                    <h1 className="absolute">Test</h1>
-                </div>
+                <OverlayBox>
+                    <Slideshow images={images} />
+                </OverlayBox>
+                <OverlayBox className="flex items-center justify-center">
+                    <h1 className="">Test</h1>
+                </OverlayBox>
             </div>
 
             <h2 className="w-[100px]">

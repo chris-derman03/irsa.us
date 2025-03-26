@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./SlideshowStyles.css";
+import OverlayBox from "../OverlayBox";
 
 interface Params {
     images: { path: string; desc: string }[] | null;
@@ -9,7 +10,7 @@ interface Params {
 
 const SlideshowContent = ({ images, index, isFading }: Params) => {
     return (
-        <div className="w-full h-full absolute">
+        <>
             {images
                 ? images.map((image, i) => (
                       <Image
@@ -32,7 +33,7 @@ const SlideshowContent = ({ images, index, isFading }: Params) => {
                       />
                   ))
                 : null}
-        </div>
+        </>
     );
 };
 
