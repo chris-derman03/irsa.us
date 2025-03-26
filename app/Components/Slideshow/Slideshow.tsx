@@ -39,14 +39,14 @@ const Slideshow = ({
     }, [images.length, fadeDuration, intervalDelay]);
 
     return (
-        <>
+        <div className="w-full h-full relative">
             <SlideshowContent
                 images={shuffledImages}
                 index={index}
                 isFading={isFading}
             />
             <Tint />
-        </>
+        </div>
     );
 };
 

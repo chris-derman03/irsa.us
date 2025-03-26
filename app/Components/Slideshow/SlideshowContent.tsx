@@ -13,24 +13,25 @@ const SlideshowContent = ({ images, index, isFading }: Params) => {
         <>
             {images
                 ? images.map((image, i) => (
-                      <Image
-                          src={image.path}
-                          alt={image.desc}
-                          fill
-                          className="object-cover slideshowImage"
-                          style={{
-                              opacity:
-                                  i === index
-                                      ? isFading
-                                          ? 0
-                                          : 1
-                                      : i === (index + 1) % images.length &&
-                                        isFading
-                                      ? 1
-                                      : 0,
-                          }}
-                          key={"home_image_" + i}
-                      />
+                      <OverlayBox key={"home_image_" + i}>
+                          <Image
+                              src={image.path}
+                              alt={image.desc}
+                              fill
+                              className="object-cover slideshowImage"
+                              style={{
+                                  opacity:
+                                      i === index
+                                          ? isFading
+                                              ? 0
+                                              : 1
+                                          : i === (index + 1) % images.length &&
+                                            isFading
+                                          ? 1
+                                          : 0,
+                              }}
+                          />
+                      </OverlayBox>
                   ))
                 : null}
         </>
