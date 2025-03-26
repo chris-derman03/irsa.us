@@ -29,8 +29,11 @@ export default function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased carbon`}
             >
-                <NavBar />
+                <header className="fixed z-10 w-full h-[100px]">
+                    <NavBar />
+                </header>
                 <main>{children}</main>
+                <footer>Footer</footer>
             </body>
         </html>
     );

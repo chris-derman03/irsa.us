@@ -38,7 +38,7 @@ const Slideshow = ({
     }, [images.length, fadeDuration, intervalDelay]);
 
     return (
-        <div className="w-full h-full relative">
+        <div className="w-full h-full absolute">
             <SlideshowContent
                 images={shuffledImages}
                 index={index}

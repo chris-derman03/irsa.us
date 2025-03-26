@@ -3,8 +3,6 @@
 body {
   margin: 0;
   padding: 0;
-
-  background-color: theme("colors.slate.950");
   color: white;
 }
 
@@ -16,4 +14,9 @@ body {
 
 .vignette {
   box-shadow: 0 0 200px rgba(0,0,0,0.5) inset;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
 }

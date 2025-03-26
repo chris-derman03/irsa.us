@@ -13,17 +13,20 @@ const images = [
 
 export default function Home() {
     return (
-        <div className="w-full flex flex-col items-center">
+        <div className="flex flex-col items-center">
             <div className="w-full h-[500px] md:h-screen relative">
                 <Slideshow images={images} />
+                <div className="h-full flex items-center justify-center z-20">
+                    <h1 className="absolute">Test</h1>
+                </div>
             </div>
 
-            <h1 className="w-[100px]">
+            <h2 className="w-[100px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
                 deleniti assumenda excepturi nesciunt obcaecati quaerat
                 recusandae quam eveniet dolorum? Explicabo molestiae doloribus
                 saepe voluptate, magni illum odio dolorum voluptatem tempore.
-            </h1>
+            </h2>
         </div>
     );
 }
