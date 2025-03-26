@@ -1,3 +1,4 @@
+import Button from "./Components/Interactivity/Button";
 import OverlayBox from "./Components/OverlayBox";
 import Slideshow from "./Components/Slideshow/Slideshow";
 
@@ -19,8 +20,19 @@ export default function Home() {
                 <OverlayBox>
                     <Slideshow images={images} />
                 </OverlayBox>
-                <OverlayBox className="flex items-center justify-center">
-                    <h1 className="">Test</h1>
+                <OverlayBox className="flex items-center justify-center pt-[100px]">
+                    <div className="flex flex-col items-center gap-10">
+                        <h1 className="text-center">
+                            Expert Witnesses Lawyers Trust.
+                        </h1>
+                        <div className="grid grid-cols-2 grid-rows-2 gap-3 justify-items-center">
+                            <Button text="Experts" />
+                            <Button text="Services" />
+                            <div className="col-span-2">
+                                <Button text="Inquire" primary />
+                            </div>
+                        </div>
+                    </div>
                 </OverlayBox>
             </div>
 
