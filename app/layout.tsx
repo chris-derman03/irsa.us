@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import NavBar from "./Navigation/NavBar";
-
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
+import "./globals.css";
 
 export const metadata: Metadata = {
     title: "IRSA",
@@ -26,9 +15,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased carbon`}
-            >
+            <body className="carbon">
                 <header className="fixed z-10 w-full h-[100px]">
                     <NavBar />
                 </header>
