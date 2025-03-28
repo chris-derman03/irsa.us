@@ -1,9 +1,0 @@
-.gauge {
-    width: 100px;
-    aspect-ratio: 1;
-    border-radius: 50px;
-    outline: solid 1px white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

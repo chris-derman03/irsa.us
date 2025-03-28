@@ -1,0 +1,26 @@
+.tintedPanel {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    /* box-shadow: 0 0 8px white, 0 0 5px var(--alt-color) inset; */
+    outline: solid 1px var(--gold);
+    box-shadow: 0 0 8px var(--gold);
+}
+
+.gauge {
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 75px;
+    outline: solid 2px var(--gold);
+    box-shadow: 0 0 30px white;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    background-color: var(--gold);
+    opacity: 0.4;
+}

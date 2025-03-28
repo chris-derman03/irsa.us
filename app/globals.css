@@ -3,25 +3,20 @@
 :root {
   --alt-color: theme(--color-green-500);
   --alt-color-dark:  theme(--color-green-700);
+  --gold: rgb(253, 172, 22);
+  font-family: "Montserrat";
 }
 
 body {
   margin: 0;
   padding: 0;
   color: white;
-  /* font-family: ; */
 }
 
 .carbon {
   background-color: #020836;
   background-image: url("/image/real-carbon-fibre.png");
   z-index: -5;
-}
-
-.tintedPanel {
-  background-color: rgba(0,0,0,0.35);
-  border-radius: 8px;
-  box-shadow: 0 0 8px white, 0 0 5px var(--alt-color) inset;
 }
 
 .vignette {
@@ -31,4 +26,13 @@ body {
 h1 {
   font-size: 38px;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
 }

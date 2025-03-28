@@ -1,6 +1,10 @@
+import Panel from "./Components/Home/Panel";
+import PanelDivider from "./Components/Home/PanelDivider";
+import StatGauge from "./Components/Home/StatGauge";
 import Button from "./Components/Interactivity/Button";
 import OverlayBox from "./Components/OverlayBox";
 import Slideshow from "./Components/Slideshow/Slideshow";
+import "./Components/Home/HomeStyles.css";
 
 const images = [
     { path: "/image/home/biomechanics.jpg", desc: "Biomechanical Analysis" },
@@ -15,7 +19,7 @@ const images = [
 
 export default function Home() {
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center gap-10">
             <div className="w-full h-[500px] md:h-screen relative">
                 <OverlayBox>
                     <Slideshow images={images} />
@@ -35,6 +39,14 @@ export default function Home() {
                     </div>
                 </OverlayBox>
             </div>
+
+            <Panel className="w-8/10 p-10">
+                <StatGauge stat="Cases" value={15000} plus />
+                <PanelDivider />
+                <StatGauge stat="Years of Service" value={50} />
+                <PanelDivider />
+                <StatGauge stat="Lawyers" value={3000} plus />
+            </Panel>
 
             <h2 className="w-[100px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
