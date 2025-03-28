@@ -12,13 +12,15 @@ const Button = ({ text, primary = false }: Params) => {
     return (
         <button
             className={classNames({
-                "w-[100px] h-[40px] border-2 rounded-md flex items-center justify-center font-bold":
+                "border-2 rounded-md flex items-center justify-center font-bold":
                     true,
+                "w-[120px] h-[40px]": true,
+                "lg:w-[150px] lg:h-[50px]": true,
                 defaultButton: !primary,
                 primaryButton: primary,
             })}
         >
-            {text}
+            <p className="lg:text-xl">{text}</p>
         </button>
     );
 };

@@ -8,6 +8,10 @@
     background-color: var(--alt-color-dark);
 }
 
+.defaultButton {
+    background-color: rgba(0,0,0,0.4);
+}
+
 .defaultButton:hover {
-    background-color: rgb(92, 92, 92);
+    background-color: rgb(58, 58, 58);
 }

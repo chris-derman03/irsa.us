@@ -31,10 +31,11 @@ export default function Home() {
                 </OverlayBox>
                 <OverlayBox className="flex items-center justify-center pt-[100px]">
                     <div className="flex flex-col items-center gap-10">
-                        <h1 className="text-center">
-                            Expert Witnesses Lawyers Trust.
-                        </h1>
-                        <div className="grid grid-cols-2 grid-rows-2 gap-3 justify-items-center">
+                        <p className="w-8/10 text-center text-5xl lg:text-7xl">
+                            Expert Witnesses Lawyers{" "}
+                            <span className="italic">Trust</span>.
+                        </p>
+                        <div className="grid grid-cols-2 grid-rows-2 gap-x-5 gap-y-4 justify-items-center">
                             <Button text="Experts" />
                             <Button text="Services" />
                             <div className="col-span-2">
@@ -82,12 +83,12 @@ export default function Home() {
                 </div>
             </div>
 
-            <h2 className="w-[100px]">
+            <p className="w-[100px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
                 deleniti assumenda excepturi nesciunt obcaecati quaerat
                 recusandae quam eveniet dolorum? Explicabo molestiae doloribus
                 saepe voluptate, magni illum odio dolorum voluptatem tempore.
-            </h2>
+            </p>
         </div>
     );
 }
