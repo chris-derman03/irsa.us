@@ -18,6 +18,12 @@ body {
   z-index: -5;
 }
 
+.tintedPanel {
+  background-color: rgba(0,0,0,0.35);
+  border-radius: 8px;
+  box-shadow: 0 0 8px white, 0 0 5px var(--alt-color) inset;
+}
+
 .vignette {
   box-shadow: 0 0 200px rgba(0,0,0,0.5) inset;
 }
