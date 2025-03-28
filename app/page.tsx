@@ -40,7 +40,7 @@ export default function Home() {
                 </OverlayBox>
             </div>
 
-            <Panel className="w-8/10 p-10">
+            <Panel className="w-8/10 p-10 gap-10 xl:py-20">
                 <StatGauge stat="Cases" value={15000} plus />
                 <PanelDivider />
                 <StatGauge stat="Years of Service" value={50} />

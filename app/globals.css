@@ -22,17 +22,3 @@ body {
 .vignette {
   box-shadow: 0 0 200px rgba(0,0,0,0.5) inset;
 }
-
-h1 {
-  font-size: 38px;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-p {
-  font-size: 20px;
-}

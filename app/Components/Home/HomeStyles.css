@@ -1,15 +1,31 @@
+:root {
+    --gauge-width: 150px;
+    --title-font: 38px;
+} @media (min-width: 1024px) { /* lg and larger */
+    :root {
+        --title-font: 52px;
+    }
+} @media (min-width: 1280px) { /* xl and larger screens */
+    :root {
+        --gauge-width: 200px;
+    }
+} @media (min-width: 1536px) { /* 2xl and larger screens */
+    :root {
+        --gauge-width: 250px;
+    }
+}
+
 .tintedPanel {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 8px;
-    /* box-shadow: 0 0 8px white, 0 0 5px var(--alt-color) inset; */
     outline: solid 1px var(--gold);
     box-shadow: 0 0 8px var(--gold);
 }
 
 .gauge {
-    width: 150px;
+    width: var(--gauge-width);
     aspect-ratio: 1;
-    border-radius: 75px;
+    border-radius: calc(var(--gauge-width) / 2);
     outline: solid 2px var(--gold);
     box-shadow: 0 0 30px white;
     background-color: black;
@@ -23,4 +39,23 @@
 .divider {
     background-color: var(--gold);
     opacity: 0.4;
+}
+
+h1 {
+    font-size: var(--title-font);
+    font-weight: bold;
+}
+  
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+p {
+    font-size: 20px;
 }
