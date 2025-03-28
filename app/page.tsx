@@ -20,7 +20,7 @@ const images = [
 export default function Home() {
     return (
         <div className="flex flex-col items-center gap-10">
-            <div className="w-full h-[500px] md:h-screen relative">
+            <div className="slideShowContainer w-full h-[500px] md:h-screen relative">
                 <OverlayBox>
                     <Slideshow images={images} />
                 </OverlayBox>
@@ -43,7 +43,8 @@ export default function Home() {
             <div className="w-8/10 tintedPanel">
                 <div className="w-full pt-5 px-5 md:px-10 lg:px-20 xl:px-30 2xl:px-50 text-center">
                     <p className="text-lg xl:text-2xl 2xl:text-3xl">
-                        Providing the highest quality Litigation Support since
+                        Providing the highest quality{" "}
+                        <span className="italic">Litigation Support</span> since
                         1975.
                     </p>
                 </div>
