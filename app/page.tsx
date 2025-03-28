@@ -1,10 +1,10 @@
-import Panel from "./Components/Home/Panel";
 import PanelDivider from "./Components/Home/PanelDivider";
 import StatGauge from "./Components/Home/StatGauge";
 import Button from "./Components/Interactivity/Button";
 import OverlayBox from "./Components/OverlayBox";
 import Slideshow from "./Components/Slideshow/Slideshow";
 import "./Components/Home/HomeStyles.css";
+import classNames from "classnames";
 
 const images = [
     { path: "/image/home/biomechanics.jpg", desc: "Biomechanical Analysis" },
@@ -40,13 +40,27 @@ export default function Home() {
                 </OverlayBox>
             </div>
 
-            <Panel className="w-8/10 p-10 gap-10 xl:py-20">
-                <StatGauge stat="Cases" value={15000} plus />
-                <PanelDivider />
-                <StatGauge stat="Years of Service" value={50} />
-                <PanelDivider />
-                <StatGauge stat="Lawyers" value={3000} plus />
-            </Panel>
+            <div className="w-8/10 tintedPanel">
+                <div className="w-full pt-5 px-5 md:px-10 lg:px-20 xl:px-30 2xl:px-50 text-center">
+                    <p className="text-lg xl:text-2xl 2xl:text-3xl">
+                        Providing the highest quality Litigation Support since
+                        1975.
+                    </p>
+                </div>
+                <div
+                    className={classNames({
+                        "w-full flex items-center p-10 xl:py-20 gap-10": true,
+                        "flex-col justify-center": true,
+                        "md:flex-row md:justify-around": true,
+                    })}
+                >
+                    <StatGauge stat="Cases" value={15000} plus />
+                    <PanelDivider />
+                    <StatGauge stat="Years of Service" value={50} />
+                    <PanelDivider />
+                    <StatGauge stat="Lawyers" value={3000} plus />
+                </div>
+            </div>
 
             <h2 className="w-[100px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi

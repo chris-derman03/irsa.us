@@ -14,7 +14,7 @@ const StatGauge = ({ stat, value, plus = false }: Params) => {
                     {value}
                     {plus && <FaPlus size={17} />}
                 </h2>
-                <p className="text-center text-wrap leading-6 2xl:text-3xl!">
+                <p className="text-center text-wrap leading-6 text-lg 2xl:text-3xl!">
                     {stat}
                 </p>
             </div>
