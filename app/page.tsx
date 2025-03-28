@@ -6,6 +6,9 @@ import Slideshow from "./Components/Slideshow/Slideshow";
 import "./Components/Home/HomeStyles.css";
 import classNames from "classnames";
 
+import { IoFileTrayFull, IoCalendarSharp } from "react-icons/io5";
+import { GiScales } from "react-icons/gi";
+
 const images = [
     { path: "/image/home/biomechanics.jpg", desc: "Biomechanical Analysis" },
     { path: "/image/home/drone.jpg", desc: "Drone Scanning" },
@@ -16,6 +19,8 @@ const images = [
     { path: "/image/home/hardware.jpg", desc: "Computer Hardware Forensics" },
     { path: "/image/home/digital.jpg", desc: "Digital Forensics" },
 ];
+
+const iconSizing = classNames("h-10 w-10 xl:h-18 xl:w-18");
 
 export default function Home() {
     return (
@@ -55,11 +60,25 @@ export default function Home() {
                         "md:flex-row md:justify-around": true,
                     })}
                 >
-                    <StatGauge stat="Cases" value={15000} plus />
+                    <StatGauge
+                        stat="Cases"
+                        value={15000}
+                        plus
+                        icon={<IoFileTrayFull className={iconSizing} />}
+                    />
                     <PanelDivider />
-                    <StatGauge stat="Years of Service" value={50} />
+                    <StatGauge
+                        stat="Years of Service"
+                        value={50}
+                        icon={<IoCalendarSharp className={iconSizing} />}
+                    />
                     <PanelDivider />
-                    <StatGauge stat="Lawyers" value={3000} plus />
+                    <StatGauge
+                        stat="Lawyers"
+                        value={3000}
+                        plus
+                        icon={<GiScales className={iconSizing} />}
+                    />
                 </div>
             </div>
 
