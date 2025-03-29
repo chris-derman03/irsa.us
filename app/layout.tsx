@@ -20,7 +20,7 @@ export default function RootLayout({
                     <NavBar />
                 </header>
                 <main>{children}</main>
-                <footer>Footer</footer>
+                <footer className="mt-100">Footer</footer>
             </body>
         </html>
     );

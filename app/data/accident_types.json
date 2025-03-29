@@ -1,0 +1,51 @@
+{
+    "accidents": [
+        {
+            "type": "Transportation Accidents",
+            "examples": [
+                "Automotive",
+                "Motorcycle & Scooters",
+                "Bicycles",
+                "Trucks",
+                "Buses",
+                "Boats & Ships",
+                "Jet Skis",
+                "Rollerblades & Skateboards",
+                "Golf Carts"
+            ]
+        },
+        {
+            "type": "Recreational Accidents",
+            "examples": [
+                "Team Sports",
+                "Exercise Equipment",
+                "Golf Courses",
+                "Athletic Fields",
+                "Running, Walking, Hiking, etc.",
+                "Pools & Spas"
+            ]
+        },
+        {
+            "type": "Industrial Accidents",
+            "examples": [
+                "Heavy Equipment",
+                "Forklifts",
+                "Pressure Vessels",
+                "Rotating Machinery",
+                "Hand Tools",
+                "Conveyors"
+            ]
+        },
+        {
+            "type": "Product Assessments and Accidents",
+            "examples": [
+                "Premises Safety",
+                "Slip/Trip & Falls",
+                "Falling Objects",
+                "Criminal Defense & Prosecution",
+                "Warnings & Labels",
+                "Safety Audits"
+            ]
+        }
+    ]
+}
