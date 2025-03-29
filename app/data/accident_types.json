@@ -12,7 +12,8 @@
                 "Jet Skis",
                 "Rollerblades & Skateboards",
                 "Golf Carts"
-            ]
+            ],
+            "img": "/image/home/accidents/transportation.png"
         },
         {
             "type": "Recreational Accidents",
@@ -23,7 +24,8 @@
                 "Athletic Fields",
                 "Running, Walking, Hiking, etc.",
                 "Pools & Spas"
-            ]
+            ],
+            "img": "/image/home/accidents/recreational.png"
         },
         {
             "type": "Industrial Accidents",
@@ -34,7 +36,8 @@
                 "Rotating Machinery",
                 "Hand Tools",
                 "Conveyors"
-            ]
+            ],
+            "img": "/image/home/accidents/industrial.png"
         },
         {
             "type": "Product Assessments and Accidents",
@@ -45,7 +48,8 @@
                 "Criminal Defense & Prosecution",
                 "Warnings & Labels",
                 "Safety Audits"
-            ]
+            ],
+            "img": "/image/home/accidents/product.png"
         }
     ]
 }

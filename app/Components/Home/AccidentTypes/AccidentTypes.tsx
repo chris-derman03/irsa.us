@@ -4,6 +4,7 @@ import AccidentTypesSection from "./AccidentTypesSection";
 interface Accident {
     type: string;
     examples: string[];
+    img: string;
 }
 
 const AccidentTypes = async () => {
@@ -14,9 +15,15 @@ const AccidentTypes = async () => {
     const accidents: Accident[] = JSON.parse(file).accidents;
 
     return (
-        <div className="flex flex-col gap-y-10">
-            <AccidentTypesSection />
-            <AccidentTypesSection />
+        <div className="flex flex-col">
+            {accidents.map((accident) => (
+                <AccidentTypesSection
+                    type={accident.type}
+                    examples={accident.examples}
+                    imgPath={accident.img}
+                    key={accident.type}
+                />
+            ))}
         </div>
     );
 };

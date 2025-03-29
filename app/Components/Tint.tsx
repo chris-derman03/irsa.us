@@ -1,4 +1,4 @@
-const Tint = () => {
+const Tint = ({ className = "" }: { className?: string }) => {
     const tintStyle: React.CSSProperties = {
         backgroundColor: "rgba(0, 0, 0, 0.7)",
         backdropFilter: "blur(0.01rem)",
@@ -8,7 +8,7 @@ const Tint = () => {
         height: "100%",
     };
 
-    return <div style={tintStyle} />;
+    return <div style={tintStyle} className={className} />;
 };
 
 export default Tint;

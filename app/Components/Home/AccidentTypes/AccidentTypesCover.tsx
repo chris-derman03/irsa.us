@@ -9,9 +9,9 @@ const AccidentTypesCover = ({ src }: { src: string }) => {
                 alt="transportation"
                 fill
                 style={{ objectFit: "cover" }}
-                className="absolute"
+                className="absolute rounded-sm"
             />
-            <Tint />
+            <Tint className="rounded-sm" />
         </>
     );
 };

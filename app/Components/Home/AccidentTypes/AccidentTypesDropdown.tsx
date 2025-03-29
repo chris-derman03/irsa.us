@@ -1,13 +1,24 @@
 import classNames from "classnames";
 
-const defaultStyles = classNames("w-full self-start -z-10 border-1");
+const defaultStyles = classNames(
+    "w-95/100 self-start -z-10 tintedPanel rounded-t-none! rounded-b-[4px]!"
+);
 const transitionStyles = classNames("transition-all duration-300 ease-in-out");
+
+interface Params {
+    expanded?: boolean;
+    examples: string[];
+    fontSize: number;
+    paddingY: number;
+}
 
 const AccidentTypesDropdown = ({
     expanded = false,
-}: {
-    expanded?: boolean;
-}) => {
+    examples,
+    fontSize,
+    paddingY,
+}: Params) => {
+    console.log(fontSize);
     return (
         <div
             className={classNames(defaultStyles, transitionStyles, {
@@ -15,16 +26,20 @@ const AccidentTypesDropdown = ({
                 "translate-y-[69px] opacity-100 pointer-events-auto": expanded,
             })}
         >
-            <ul>
-                <li>a</li>
-                <li>b</li>
-                <li>c</li>
-                <li>a</li>
-                <li>b</li>
-                <li>c</li>
-                <li>a</li>
-                <li>b</li>
-                <li>c</li>
+            <ul
+                className="text-left pl-5"
+                style={{
+                    paddingTop: `${paddingY / 2}px`,
+                    paddingBottom: `${paddingY / 2}px`,
+                }}
+            >
+                {examples.map((example) => (
+                    <li key={example} style={{ height: `${fontSize}px` }}>
+                        <p style={{ fontSize: `${fontSize - 8}px` }}>
+                            {example}
+                        </p>
+                    </li>
+                ))}
             </ul>
         </div>
     );
