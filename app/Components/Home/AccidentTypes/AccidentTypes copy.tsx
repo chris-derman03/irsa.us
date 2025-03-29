@@ -1,5 +1,5 @@
 import { promises as fs } from "fs";
-import PanelDivider from "./PanelDivider";
+import PanelDivider from "../PanelDivider";
 
 interface Accident {
     type: string;

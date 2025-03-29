@@ -1,4 +1,4 @@
-import AccidentTypes from "./AccidentTypes";
+import AccidentTypes from "./AccidentTypes/AccidentTypes";
 
 const HomePageDescription = () => {
     return (
