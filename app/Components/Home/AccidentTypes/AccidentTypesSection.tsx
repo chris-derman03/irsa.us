@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import AccidentTypesCover from "./AccidentTypesCover";
 import AccidentTypesDropdown from "./AccidentTypesDropdown";
 import AccidentTypesButton from "./AccidentTypesButton";
-import classNames from "classnames";
 
 interface Params {
     type: string;

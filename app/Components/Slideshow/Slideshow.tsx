@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import SlideshowContent from "./SlideshowContent";
 import Tint from "../Tint";
 import { shuffle } from "fast-shuffle";
-import OverlayBox from "../OverlayBox";
 
 interface Params {
     images: { path: string; desc: string }[];

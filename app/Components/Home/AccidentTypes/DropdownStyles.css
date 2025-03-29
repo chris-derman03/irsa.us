@@ -1,0 +1,5 @@
+.dropdownButton:hover {
+    transform: scale(1.2);
+    color: var(--gold);
+    transition: transform 0.2s ease-out;
+}
