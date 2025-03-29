@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 
-const iconSizing = classNames("h-8 w-8");
+const iconSizing = classNames("h-8 w-8 lg:h-10 lg:w-10");
 const iconAnimation = classNames(
     "transition-transform duration-300 ease-in-out"
 );

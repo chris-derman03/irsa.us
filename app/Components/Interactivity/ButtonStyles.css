@@ -15,3 +15,7 @@
 .defaultButton:hover {
     background-color: rgb(58, 58, 58);
 }
+
+button {
+    transition: background-color 0.2s ease-out;
+}

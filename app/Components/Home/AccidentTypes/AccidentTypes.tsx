@@ -15,7 +15,7 @@ const AccidentTypes = async () => {
     const accidents: Accident[] = JSON.parse(file).accidents;
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:gap-5">
             {accidents.map((accident) => (
                 <AccidentTypesSection
                     type={accident.type}

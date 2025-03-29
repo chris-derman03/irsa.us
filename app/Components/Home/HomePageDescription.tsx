@@ -3,7 +3,7 @@ import AccidentTypes from "./AccidentTypes/AccidentTypes";
 const HomePageDescription = () => {
     return (
         <div className="flex flex-col gap-10 text-center">
-            <h1 className="text-6xl">IRSA</h1>
+            <h1 className="text-4xl md:text-6xl">IRSA</h1>
 
             <p className="text-lg">
                 Our organization of nearly two dozen staff and consisting of
