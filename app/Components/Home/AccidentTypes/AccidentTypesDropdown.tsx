@@ -23,7 +23,8 @@ const AccidentTypesDropdown = ({
         <div
             className={classNames(defaultStyles, transitionStyles, {
                 "opacity-0 pointer-events-none": !expanded,
-                "translate-y-[69px] opacity-100 pointer-events-auto": expanded,
+                "translate-y-[69px] lg:translate-y-[99px] opacity-100 pointer-events-auto":
+                    expanded,
             })}
         >
             <ul

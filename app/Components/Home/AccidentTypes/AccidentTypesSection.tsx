@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AccidentTypesCover from "./AccidentTypesCover";
 import AccidentTypesDropdown from "./AccidentTypesDropdown";
 import AccidentTypesButton from "./AccidentTypesButton";
@@ -14,8 +14,27 @@ interface Params {
 const AccidentTypesSection = ({ type, examples, imgPath }: Params) => {
     const [isExpanded, setExpanded] = useState(false);
 
+    const [examplesFontSize, setExamplesFontSize] = useState(24);
+    useEffect(() => {
+        // Function to update font size based on screen width
+        const updateFontSize = () => {
+            if (window.innerWidth >= 1280) {
+                // xl and larger
+                setExamplesFontSize(30);
+            } else {
+                setExamplesFontSize(24);
+            }
+        };
+
+        // Call on mount and add event listener
+        updateFontSize();
+        window.addEventListener("resize", updateFontSize);
+
+        // Cleanup listener on unmount
+        return () => window.removeEventListener("resize", updateFontSize);
+    }, []);
+
     // Preset pixel values for dropdown menu (necessary for visually pleasing expansion)
-    const examplesFontSize = 24;
     const accidentTypeMargin = 20;
     const dropdownPaddingY = 20;
     const dropdownHeight =
@@ -25,7 +44,7 @@ const AccidentTypesSection = ({ type, examples, imgPath }: Params) => {
 
     return (
         <div
-            className="h-[70px] w-full border-1 rounded-sm"
+            className="h-[70px] lg:h-[100px] w-full border-1 rounded-sm"
             style={{
                 marginBottom: isExpanded
                     ? `${dropdownHeight}px`
@@ -35,8 +54,10 @@ const AccidentTypesSection = ({ type, examples, imgPath }: Params) => {
         >
             <div className="w-full h-full flex items-center justify-center relative">
                 <AccidentTypesCover src={imgPath} />
-                <div className="w-full flex justify-between items-center absolute px-2">
-                    <h2 className="w-3/4 text-xl text-left">{type}</h2>
+                <div className="w-full flex justify-between items-center absolute px-2 lg:px-4">
+                    <h2 className="w-3/4 text-xl lg:text-3xl text-left">
+                        {type}
+                    </h2>
                     <AccidentTypesButton
                         onClick={() => setExpanded((prev) => !prev)}
                     />
