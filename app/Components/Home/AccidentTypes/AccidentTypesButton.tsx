@@ -2,9 +2,11 @@
 import classNames from "classnames";
 import { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowDown } from "react-icons/io";
 
 const iconSizing = classNames("h-8 w-8");
+const iconAnimation = classNames(
+    "transition-transform duration-300 ease-in-out"
+);
 
 interface Params {
     onClick: () => void;
@@ -20,11 +22,11 @@ const AccidentTypesButton = ({ onClick }: Params) => {
 
     return (
         <button onClick={handleClick}>
-            {isClicked ? (
-                <IoIosArrowDown className={iconSizing} />
-            ) : (
-                <IoIosArrowBack className={iconSizing} />
-            )}
+            <IoIosArrowBack
+                className={classNames(iconSizing, iconAnimation, {
+                    "-rotate-90": isClicked,
+                })}
+            />
         </button>
     );
 };

@@ -16,6 +16,7 @@ const AccidentTypes = async () => {
     return (
         <div className="flex flex-col gap-y-10">
             <AccidentTypesSection />
+            <AccidentTypesSection />
         </div>
     );
 };

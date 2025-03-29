@@ -8,12 +8,12 @@ const AccidentTypesSection = () => {
     const [isExpanded, setExpanded] = useState(false);
 
     return (
-        <div className="h-[70px] border-1 overflow-visible relative">
-            <div className="w-full h-full flex items-center justify-center">
+        <div className="h-[70px] w-full border-1">
+            <div className="w-full h-full flex items-center justify-center relative">
                 <AccidentTypesCover
                     src={"/image/home/accidents/transportation.png"}
                 />
-                <div className="flex justify-between absolute z-50">
+                <div className="flex justify-between items-center absolute">
                     <h2 className="text-xl text-center w-1/4">
                         Transportation Accident
                     </h2>
@@ -21,8 +21,8 @@ const AccidentTypesSection = () => {
                         onClick={() => setExpanded((prev) => !prev)}
                     />
                 </div>
+                <AccidentTypesDropdown expanded={isExpanded} />
             </div>
-            {isExpanded && <AccidentTypesDropdown />}
         </div>
     );
 };
