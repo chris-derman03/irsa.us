@@ -17,7 +17,7 @@ const TitleSlideshow = async () => {
             </OverlayBox>
             <OverlayBox className="flex items-center justify-center pt-[100px]">
                 <div className="flex flex-col items-center gap-10">
-                    <p className="w-8/10 text-center text-5xl lg:text-7xl">
+                    <p className="w-9/10 text-center text-4xl md:text-7xl">
                         Expert Witnesses Lawyers{" "}
                         <span className="italic">Trust</span>.
                     </p>
