@@ -34,6 +34,7 @@ const StatsBar = () => {
                 <StatGauge
                     stat="Years of Service"
                     value={50}
+                    plus
                     icon={<IoCalendarSharp className={iconSizing} />}
                 />
                 <PanelDivider mobile />
