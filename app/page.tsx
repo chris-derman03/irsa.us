@@ -7,7 +7,7 @@ import HomePageDescription from "./Components/Home/HomePageDescription";
 export default function Home() {
     return (
         <div className="flex flex-col items-center gap-20">
-            <div className="slideShowContainer w-full h-[500px] md:h-screen relative">
+            <div className="slideShowContainer w-full h-screen relative">
                 <TitleSlideshow />
             </div>
 

@@ -28,7 +28,7 @@ const AccidentTypesDropdown = ({
             })}
         >
             <ul
-                className="text-left pl-5"
+                className="text-center pl-5"
                 style={{
                     paddingTop: `${paddingY / 2}px`,
                     paddingBottom: `${paddingY / 2}px`,
