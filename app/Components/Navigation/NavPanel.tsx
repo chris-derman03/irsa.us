@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { forwardRef, useState } from "react";
 import SubLinks from "./SubLinks";
 import servicesData from "../../data/services.json";
+import engineersData from "../../data/engineers.json";
 
 const pages = [
   { label: "Home", href: "/" },
@@ -15,8 +16,15 @@ const pages = [
       href: service.href,
     })),
   },
-  { label: "Experts", href: "/experts" },
-  { label: "Administrators", href: "/admins" },
+  {
+    label: "Experts",
+    href: "/experts",
+    subLinks: engineersData.engineers.map((engineer) => ({
+      label: engineer.name,
+      href: `/experts/${engineer.id}`,
+    })),
+  },
+  { label: "Administrators", href: "/administrators" },
   { label: "Media & Publications", href: "/media_and_publications" },
   { label: "Contact", href: "/contact" },
   { label: "About", href: "/about" },
@@ -47,7 +55,7 @@ const NavPanel = forwardRef<
                         }`}
     >
       <div className="w-full flex">
-        <ul className="flex flex-col w-7/10">
+        <ul className="flex flex-col w-7/10 md:w-5/10 lg:w-7/10">
           {pages.map((page) => (
             <li
               key={page.label}
@@ -58,6 +66,10 @@ const NavPanel = forwardRef<
                 <Link
                   href={page.href}
                   onClick={() => handleLinkClick(page.href)}
+                  className={`${
+                    page.href === "/" + currentPath.split("/")[1] &&
+                    "text-slate-700"
+                  }`}
                 >
                   {page.label}
                 </Link>
@@ -66,7 +78,7 @@ const NavPanel = forwardRef<
             </li>
           ))}
         </ul>
-        <div className="relative flex w-3/10 flex-grow">
+        <div className="hidden relative md:flex w-3/10 flex-grow">
           {pages.map(
             (page) =>
               page.label === hoveredLink && (
@@ -74,7 +86,7 @@ const NavPanel = forwardRef<
                   key={"subLinksGroup_" + page.label}
                   className="absolute w-full h-full"
                 >
-                  <SubLinks links={page.subLinks} />
+                  <SubLinks links={page.subLinks} setPanelOut={setPanelOut} />
                 </div>
               )
           )}

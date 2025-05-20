@@ -1,0 +1,148 @@
+{
+    "engineers": [
+        {
+            "id": "kenneth-a-solomon",
+            "contentID": "KAS",
+            "name": "Kenneth Alvin Solomon",
+            "titles": ["Chief Forensic Scientist", "CEO"],
+            "degrees": ["B.L.S", "B.S.", "M.S.", "P.H.D", "P.E.", "Post P.H.D."],
+            "email": "kenneth@irsa.us",
+            "CV": "CV - Dr. Kenneth Solomon - June 2024.pdf",
+            "hidden": false
+        },
+        {
+            "id": "bob-malek",
+            "contentID": "BobMalek",
+            "name": "Bob Malek",
+            "titles": ["Deputy Managing Scientist", "Senior Forensic Scientist"],
+            "degrees": ["B.S.", "M.S.", "J.D."],
+            "email": "bmalek@irsa.us",
+            "specialties": ["High Profile Criminal and Civil Proceedings", "Accident Reconstruction", "Human Factors", "Biomechanics", "Safety Analysis", "EDR"]
+        },
+        {
+            "id": "elisa-capello",
+            "contentID": "ElisaCapello",
+            "name": "Elisa Solomon Capello",
+            "titles": ["Senior Vocational Analyst"],
+            "degrees": ["A.A.", "B.A.", "M.S."],
+            "email": "esolomon@irsa.us",
+            "specialties": ["LoE & Vocational Analyses"]
+        },
+        {
+            "id": "ricardo-mejia",
+            "contentID": "RicardoMejia",
+            "name": "Ricardo Mejia",
+            "titles": ["Senior Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "ricardo@irsa.us",
+            "specialties": ["Accident Reconstruction", "Premises Liability", "Simulations"]
+        },
+        {
+            "id": "wei-chao",
+            "contentID": "WeiChao",
+            "name": "Wei Chao",
+            "titles": ["Senior Forensic Scientist"],
+            "degrees": ["B.S.", "M.S."],
+            "email": "wchao@irsa.us",
+            "specialties": ["Accident Reconstruction", "Human Factors", "Premises Liability", "EDR"]
+        },
+        {
+            "id": "ban-choi",
+            "contentID": "BanChoi",
+            "name": "Ban Choi",
+            "titles": ["Senior Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "bchoi@irsa.us",
+            "specialties": ["Accident Reconstruction", "Simulations", "Biomechanics", "EDR"]
+        },
+        {
+            "id": "jorge-garcia",
+            "contentID": "JorgeGarcia",
+            "name": "Jorge Garcia",
+            "titles": ["Senior Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "jgarcia@irsa.us",
+            "specialties": ["Accident Reconstruction", "Premises Liability", "EDR"]
+        },
+        {
+            "id": "jaime-garcia",
+            "contentID": "JaimeGarcia",
+            "name": "Jaime Garcia",
+            "titles": ["Senior Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "jaime.garcia@irsa.us",
+            "specialties": ["Accident Reconstruction", "Premises Liability"],
+            "CV": "CV - Jaime Garcia - May 2025.pdf"
+        },
+        {
+            "id": "librado-mancilla",
+            "contentID": "LibradoMancilla",
+            "name": "Librado Mancilla",
+            "titles": ["Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "lmancilla@irsa.us",
+            "specialties": ["Animations", "Accident Reconstruction", "Human Factors", "Biomechanics", "EDR"],
+            "CV": "CV - Librado Mancilla - May 2025.pdf"
+        },
+        {
+            "id": "daniel-vatcher",
+            "contentID": "DanielVatcher",
+            "name": "Daniel Vatcher",
+            "titles": ["Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "dvatcher@irsa.us"
+        },
+        {
+            "id": "chad-krieger",
+            "contentID": "ChadKrieger",
+            "name": "Chad Krieger",
+            "titles": ["Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "ckrieger@irsa.us",
+            "specialties": ["Premises Liability", "EDR"]
+        },
+        {
+            "id": "alex-capello",
+            "contentID": "AlexCapello",
+            "name": "Alex Capello",
+            "titles": ["Staff Video Analyst"],
+            "degrees": ["B.S.", "M.A."],
+            "email": "acapello@irsa.us",
+            "specialties": ["Photometrics", "Videometrics"]
+        },
+        {
+            "id": "ricardo-esquivel",
+            "contentID": "RicardoEsquivel",
+            "name": "Ricardo Esquivel",
+            "titles": ["Associate Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "r.esquivel@irsa.us"
+        },
+        {
+            "id": "savannah-larmon",
+            "contentID": "SavannahLarmon",
+            "name": "Savannah Larmon",
+            "titles": ["Associate Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "s.larmon@irsa.us",
+            "specialties": ["Premises Liability", "EDR"]
+        },
+        {
+            "id": "christian-dermanuelian",
+            "contentID": "ChristianDerManuelian",
+            "name": "Christian DerManuelian",
+            "titles": ["Staff Computer Scientist"],
+            "degrees": ["B.S."],
+            "email": "cdermanuelian@irsa.us",
+            "specialties": ["Digital Forensics", "Drone Piloting", "EDR"]
+        },
+        {
+            "id": "malcolm",
+            "contentID": "Malcolm",
+            "name": "Malcolm",
+            "titles": ["Test Dummy"],
+            "degrees": ["N/A"],
+            "email": "N/A"
+        }
+    ]
+}
