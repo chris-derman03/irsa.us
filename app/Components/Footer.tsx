@@ -1,10 +1,7 @@
-import PanelDivider from "./PanelDivider";
-
 const Footer = () => {
   return (
-    <footer className="flex-grow w-full h-[300px] bg-[rgb(0,0,0,0.4)]">
-      <PanelDivider height={3} />
-      <div className="w-full h-full flex items-center justify-center">
+    <footer className="bottom-0 w-full h-[250px] bg-[rgb(0,0,0,1.9)] bg-[url(/utils/real-carbon-fibre.png)]">
+      <div className="w-full flex h-full items-center justify-center border-t-2 border-[var(--primary)]">
         Footer
       </div>
     </footer>

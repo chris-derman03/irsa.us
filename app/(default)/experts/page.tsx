@@ -2,6 +2,8 @@ import engineerData from "../../data/engineers.json";
 import Tint from "@/app/Components/Tint";
 import Image from "next/image";
 import Body from "./Body";
+// import FixedBackgroundPage from "@/app/Components/FixedBackgroundPage";
+import Footer from "@/app/Components/Footer";
 
 const page = async () => {
   const experts = engineerData.engineers;
@@ -18,9 +20,18 @@ const page = async () => {
 
   return (
     <>
-      <div className="slideShowContainer relative top-0 left-0 w-full h-[85vh] flex items-center justify-center">
+      {/* <FixedBackgroundPage
+        src={"/experts/backdrop.jpg"}
+        alt={"Experts Backdrop"}
+        content={
+          <div className="mt-[20vh]">
+            <Body experts={experts} />
+          </div>
+        }
+      /> */}
+      <div className="slideShowContainer relative top-0 left-0 w-full h-[80vh] flex items-center justify-center">
         <Image
-          src="/staff/engineer/backdrop.jpg"
+          src="/experts/backdrop.jpg"
           fill
           style={{ objectFit: "cover" }}
           alt={"Experts Backdrop"}
@@ -30,6 +41,7 @@ const page = async () => {
       </div>
 
       <Body experts={experts} />
+      <Footer />
     </>
   );
 };

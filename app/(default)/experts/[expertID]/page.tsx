@@ -11,6 +11,8 @@ import PanelDivider from "@/app/Components/PanelDivider";
 import { expertComponents } from "@/app/Components/expertComponentMap";
 import Link from "next/link";
 import StyledList from "@/app/Components/StyledList";
+import Footer from "@/app/Components/Footer";
+import { Expert } from "../ExpertCard";
 
 interface Props {
   params: Promise<{ expertID: string }>;
@@ -19,7 +21,7 @@ interface Props {
 const ExpertPage = async ({ params }: Props) => {
   const { expertID } = await params;
   const experts = engineerData.engineers;
-  const expert = experts.find((e: any) => e.id === expertID);
+  const expert = experts.find((e: Expert) => e.id === expertID);
 
   if (!expert)
     return (
@@ -45,12 +47,12 @@ const ExpertPage = async ({ params }: Props) => {
           </h1>
         </div>
       </div>
-      <div className="mt-10 mx-10">
+      <div className="mt-10 mx-10 mb-50">
         <div className="tintedPanel p-10 flex flex-col gap-10">
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 items-center lg:items-start justify-center">
             <div className="relative w-full md:w-[70%] lg:w-5/10 xl:w-4/10 2xl:w-[25%] aspect-[4/5] h-auto">
               <Picture
-                src={`/staff/engineer/${expert.id}/headshot.png`}
+                src={`/experts/${expert.id}/headshot.png`}
                 alt={`${expert.name} Headshot`}
                 override
                 className="absolute z-10 w-full h-full"
@@ -71,8 +73,8 @@ const ExpertPage = async ({ params }: Props) => {
                   {expert.titles && (
                     <StyledList
                       items={expert.titles}
-                      conjunction=""
-                      conjunction2=" / "
+                      separator=" / "
+                      conjunction={expert.titles.length <= 2 ? " / " : ""}
                       inverted
                     />
                   )}
@@ -89,8 +91,7 @@ const ExpertPage = async ({ params }: Props) => {
                   {expert.degrees && (
                     <StyledList
                       items={expert.degrees}
-                      conjunction=""
-                      conjunction2=", "
+                      conjunction={expert.degrees.length <= 2 ? ", " : ""}
                       inverted
                     />
                   )}
@@ -116,7 +117,7 @@ const ExpertPage = async ({ params }: Props) => {
                   </div>
                   <div className="w-[90%] lg:w-[95%]">
                     <Link
-                      href={`/staff/engineer/${expert.id}/${expert.CV}`}
+                      href={`/experts/${expert.id}/${expert.CV}`}
                       target="_blank"
                       className="hover:underline"
                     >
@@ -137,8 +138,7 @@ const ExpertPage = async ({ params }: Props) => {
                   <div className="w-[90%] lg:w-[95%]">
                     <StyledList
                       items={expert.specialties}
-                      conjunction=""
-                      conjunction2=", "
+                      conjunction={expert.specialties.length <= 2 ? ", " : ""}
                       inverted
                     />
                   </div>
@@ -152,6 +152,8 @@ const ExpertPage = async ({ params }: Props) => {
           {PageContent && <PageContent />}
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };

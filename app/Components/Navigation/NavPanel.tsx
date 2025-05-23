@@ -96,4 +96,6 @@ const NavPanel = forwardRef<
   );
 });
 
+NavPanel.displayName = "NavPanel";
+
 export default NavPanel;

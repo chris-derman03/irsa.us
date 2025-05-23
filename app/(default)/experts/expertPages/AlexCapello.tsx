@@ -11,24 +11,18 @@ const AlexCapello = () => {
           label="Videometrics and Photometrics"
         />{" "}
         division. He has the ability to duplicate the{" "}
-        <StyledList items={["lighting", "contrast"]} conjunction2=" and " />{" "}
-        (both video and photo) of the site at the time of the accident as well
-        as extract <StyledList items={["metadata"]} /> from images. He can also
-        take <StyledList items={["macro photographs"]} />.
+        <StyledList items={["lighting", "contrast"]} /> (both video and photo)
+        of the site at the time of the accident as well as extract{" "}
+        <StyledList items={["metadata"]} /> from images. He can also take{" "}
+        <StyledList items={["macro photographs"]} />.
       </p>
 
       <p className="text-center text-xl">
         In addition to the above, Mr. Capello possesses the capabilities to
         duplicate injuries with the use of{" "}
         <StyledList items={["special effects"]} /> techniques, create realistic
-        <RouteLink href="/services/threeD" label="3D Models" endspc={false} />,
-        and download and{" "}
-        <RouteLink
-          href="/services/cdr"
-          label="retrieve crash data"
-          endspc={false}
-        />
-        .
+        <RouteLink href="/services/threeD" label="3D Models" />, and download
+        and <RouteLink href="/services/cdr" label="retrieve crash data" />.
       </p>
     </div>
   );

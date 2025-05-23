@@ -5,9 +5,16 @@ interface Props {
   alt: string;
   className?: string;
   override?: boolean;
+  unoptimized?: boolean;
 }
 
-const Picture = ({ src, alt, className = "", override = false }: Props) => {
+const Picture = ({
+  src,
+  alt,
+  className = "",
+  override = false,
+  unoptimized = false,
+}: Props) => {
   const defaultClassName = "w-full lg:w-7/10 h-auto";
   return (
     <Image
@@ -18,6 +25,7 @@ const Picture = ({ src, alt, className = "", override = false }: Props) => {
       className={`rounded-[8px] shadow-[0_0_5px_white] ${
         !override && defaultClassName
       } ${className}`}
+      unoptimized={unoptimized}
     />
   );
 };

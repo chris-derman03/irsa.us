@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import NavBar from "../Components/Navigation/NavBar";
 import "../globals.css";
-import Footer from "../Components/Footer";
 
 export const metadata: Metadata = {
   title: "IRSA",
@@ -21,7 +20,6 @@ export default async function DefaultLayout({
           <NavBar />
         </header>
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );

@@ -10,7 +10,7 @@ const LibradoMancilla = () => {
         Mr. Mancilla holds a{" "}
         <StyledList
           items={["Bachelor of Science", "Physics"]}
-          conjunction2=" in "
+          conjunction=" in "
         />{" "}
         from California State Polytechnic University, Pomona, where he studied
         key principles of physics, including optics, kinematics, thermodynamics,
@@ -19,18 +19,18 @@ const LibradoMancilla = () => {
         <RouteLink
           href="/services/accident_recon"
           label="accident reconstruction"
-          endspc={false}
         />{" "}
         for various types of incidents, including, but not limited to,{" "}
         <StyledList items={["transportation accidents"]} /> and{" "}
-        <RouteLink
-          href="/services/premises"
-          label="premises liability"
-          endspc={false}
-        />{" "}
+        <RouteLink href="/services/premises" label="premises liability" />{" "}
         cases. He also applies his knowledge of{" "}
-        <RouteLink href="/services/human_factors" label="human factors" />
-        and <RouteLink href="/services/biomechanics" label="biomechanics" />
+        <RouteLink
+          href="/services/human_factors"
+          label="human factors"
+          endspc
+        />
+        and{" "}
+        <RouteLink href="/services/biomechanics" label="biomechanics" endspc />
         to assist in accident reconstruction.
       </p>
       <p className="text-center text-xl">
@@ -46,14 +46,13 @@ const LibradoMancilla = () => {
         analyze this data. Additionally, Mr. Mancilla can also use his{" "}
         <StyledList
           items={["computer skills", "animations"]}
-          conjunction2=" to create "
+          conjunction=" to create "
         />{" "}
         of different types of accidents for demonstrative purposes which can
-        incorporate{" "}
-        <RouteLink href="/services/threeD" label="3D Scans" endspc={false} />.
-        Mr. Mancilla is also able to use specialized software to create
-        simulations which can aid in accident reconstruction and creating
-        demonstrative aids.
+        incorporate <RouteLink href="/services/threeD" label="3D Scans" />. Mr.
+        Mancilla is also able to use specialized software to create simulations
+        which can aid in accident reconstruction and creating demonstrative
+        aids.
       </p>
       <p className="text-center text-xl">
         Mr. Mancilla employs the discipline of{" "}
@@ -67,7 +66,7 @@ const LibradoMancilla = () => {
       <h1 className="text-3xl text-secondary">EXEMPLAR CASE WORK</h1>
       <p className="text-center text-xl">
         In one{" "}
-        <StyledList items={["automobile", "pedestrian"]} conjunction2=" vs. " />{" "}
+        <StyledList items={["automobile", "pedestrian"]} conjunction=" vs. " />{" "}
         case, the driver of the vehicle was alleged to have been speeding when
         they impacted a pedestrian, and it was alleged that driver inattention
         was a factor. Mr. Mancilla used available evidence to{" "}

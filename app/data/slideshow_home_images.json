@@ -1,12 +1,12 @@
 {
     "images": [
-    { "path": "/image/home/titleSlideShow/biomechanics.jpg", "desc": "Biomechanical Analysis" },
-    { "path": "/image/home/titleSlideShow/drone.jpg", "desc": "Drone Scanning" },
-    { "path": "/image/home/titleSlideShow/edr.jpg", "desc": "Crash Data Retrieval" },
-    { "path": "/image/home/titleSlideShow/industrial.jpg", "desc": "Site 3D Scanning" },
-    { "path": "/image/home/titleSlideShow/scanner3d.jpg", "desc": "3D Scanning" },
-    { "path": "/image/home/titleSlideShow/simulation.jpg", "desc": "Accident Simulation" },
-    { "path": "/image/home/titleSlideShow/hardware.jpg", "desc": "Computer Hardware Forensics" },
-    { "path": "/image/home/titleSlideShow/digital.jpg", "desc": "Digital Forensics" }
+    { "path": "/home/titleSlideShow/biomechanics.jpg", "desc": "Biomechanical Analysis" },
+    { "path": "/home/titleSlideShow/drone.jpg", "desc": "Drone Scanning" },
+    { "path": "/home/titleSlideShow/edr.jpg", "desc": "Crash Data Retrieval" },
+    { "path": "/home/titleSlideShow/industrial.jpg", "desc": "Site 3D Scanning" },
+    { "path": "/home/titleSlideShow/scanner3d.jpg", "desc": "3D Scanning" },
+    { "path": "/home/titleSlideShow/simulation.jpg", "desc": "Accident Simulation" },
+    { "path": "/home/titleSlideShow/hardware.jpg", "desc": "Computer Hardware Forensics" },
+    { "path": "/home/titleSlideShow/digital.jpg", "desc": "Digital Forensics" }
     ]
 }

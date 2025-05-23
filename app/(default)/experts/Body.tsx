@@ -12,10 +12,13 @@ const Body = ({ experts }: Props) => {
   const [searchParams, setSearchParams] = useState("");
 
   return (
-    <>
-      <ExpertSearchBar setSearchParams={setSearchParams} />
+    <div className="mb-50">
+      <ExpertSearchBar
+        setSearchParams={setSearchParams}
+        searchParams={searchParams}
+      />
       <ExpertCards experts={experts} searchParams={searchParams} />
-    </>
+    </div>
   );
 };
 

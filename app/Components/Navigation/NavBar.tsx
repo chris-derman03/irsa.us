@@ -43,7 +43,7 @@ const NavBar = () => {
       <nav className="z-[1000] tinted h-full w-full flex items-center justify-between px-5 md:px-7">
         <div className="relative h-8/10 aspect-square">
           <Link href="/">
-            <Image src={"/logo/darkLogo.png"} alt="IRSA" fill />
+            <Image src={"/utils/logoDark.png"} alt="IRSA" fill />
           </Link>
         </div>
         <h1 className="hidden md:inline text-center text-2xl">

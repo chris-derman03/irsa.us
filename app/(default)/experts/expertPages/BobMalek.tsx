@@ -14,21 +14,10 @@ const BobMalek = () => {
         <RouteLink
           href="/services/accident_recon"
           label="accident reconstruction"
-          endspc={false}
         />
-        ,{" "}
-        <RouteLink
-          href="/services/biomechanics"
-          label="biomechanics"
-          endspc={false}
-        />
-        ,{" "}
-        <RouteLink
-          href="/services/human_factors"
-          label="human factors"
-          endspc={false}
-        />
-        , and safety engineering, Mr. Malek has been qualified as an expert and
+        , <RouteLink href="/services/biomechanics" label="biomechanics" />,{" "}
+        <RouteLink href="/services/human_factors" label="human factors" />, and
+        safety engineering, Mr. Malek has been qualified as an expert and
         testified in more than 90 trials across jurisdictions.
       </p>
 
@@ -41,12 +30,12 @@ const BobMalek = () => {
         He also earned a{" "}
         <StyledList
           items={["Master of Science", "Engineering Management"]}
-          conjunction2=" in "
+          conjunction=" in "
         />{" "}
         and a{" "}
         <StyledList
           items={["Bachelor of Science", "Civil Engineering"]}
-          conjunction2=" in "
+          conjunction=" in "
         />{" "}
         from California State University, Northridge. This rare combination of
         legal acumen and technical expertise enables him to deliver

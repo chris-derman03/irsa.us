@@ -8,7 +8,7 @@ const BanChoi = () => {
         Mr. Choi earned a Bachelor of Science degree in{" "}
         <StyledList
           items={["Physics", "California State University, Fullerton"]}
-          conjunction2=" from "
+          conjunction=" from "
         />
         . His degree allotted him the ability to perform duties in
         <StyledList
@@ -22,37 +22,21 @@ const BanChoi = () => {
         />
         . This technical degree has given him an understanding of the major
         scientific principles that are fundamental to{" "}
-        <RouteLink
-          href="/services/biomechanics"
-          label="Biomechanics"
-          endspc={false}
-        />
-        ,{" "}
-        <RouteLink
-          href="/services/human_factors"
-          label="Human Factors"
-          endspc={false}
-        />
+        <RouteLink href="/services/biomechanics" label="Biomechanics" />,{" "}
+        <RouteLink href="/services/human_factors" label="Human Factors" />
         ,
         <RouteLink
           href="/services/accident_recon"
           label="Accident Reconstruction"
-          endspc={false}
         />
         , and{" "}
         <RouteLink
           href="/services/animations_simulations"
           label="Computer Simulations"
-          endspc={false}
         />
         . Additionally, Mr. Choi obtained his certifications in XL Tribometrist
         as well as{" "}
-        <RouteLink
-          href="/services/cdr"
-          label="Crash Data Retrieval"
-          endspc={false}
-        />
-        .{" "}
+        <RouteLink href="/services/cdr" label="Crash Data Retrieval" />.{" "}
       </p>
       <p className="text-center text-xl">
         Mr. Choi applies his knowledge of and experience with the principles of

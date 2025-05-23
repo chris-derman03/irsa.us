@@ -26,13 +26,9 @@ const JorgeGarcia = () => {
         the angel of impact, crush depths, change in velocity, G-forces, speeds
         of the vehicles involved, and the accelerations as a result of a
         collision. For{" "}
-        <RouteLink
-          href="/services/premises"
-          label="premises liability"
-          endspc={false}
-        />
-        , he utilizes his knowledge of the UBC, ANSI, and OSHA standards to
-        determine outcomes.
+        <RouteLink href="/services/premises" label="premises liability" />, he
+        utilizes his knowledge of the UBC, ANSI, and OSHA standards to determine
+        outcomes.
       </p>
       <p className="text-center text-xl">
         Mr. Garcia employs the discipline of{" "}

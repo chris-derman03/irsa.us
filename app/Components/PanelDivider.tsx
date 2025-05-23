@@ -1,26 +1,21 @@
-import classNames from "classnames";
-
-interface Params {
+interface Props {
   height?: number;
   mobile?: boolean;
-  md?: boolean;
   className?: string;
 }
 
 const PanelDivider = ({
   height = 1,
   mobile = false,
-  md = false,
   className = "",
-}: Params) => {
+}: Props) => {
   return (
     <div
-      className={classNames(
-        "w-full divider bg-[var(--gold)] opacity-70",
-        className,
-        { "md:hidden": mobile },
-        { "hidden md:inline": md }
-      )}
+      className={`
+        w-full divider bg-[var(--primary)] opacity-70
+        ${className}
+        ${mobile ? "md:hidden" : ""}
+      `}
       style={{ height: `${height}px` }}
     />
   );

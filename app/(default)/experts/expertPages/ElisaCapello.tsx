@@ -28,7 +28,7 @@ const ElisaCapello = () => {
       <p className="text-center text-xl">
         She works with all avenues of employment such as: Labor, Education,
         office settings, and other areas of{" "}
-        <RouteLink href="/services/misc" label="vocations" endspc={false} />.{" "}
+        <RouteLink href="/services/misc" label="vocations" />.{" "}
       </p>
     </div>
   );

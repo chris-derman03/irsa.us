@@ -1,11 +1,11 @@
 import PanelDivider from "../Components/PanelDivider";
 import TitleSlideshow from "../Components/Home/TitleSlideshow";
-import "../Components/Home/HomeStyles.css";
 import StatsBar from "../Components/Home/StatsBar";
 import HomePageDescription from "../Components/Home/HomePageDescription";
 import Tint from "../Components/Tint";
 import HomeServices from "../Components/Home/HomeServices";
 import Image from "next/image";
+import Footer from "../Components/Footer";
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
 
       <div className="relative w-full flex flex-col items-center justify-center gap-y-20 overflow-hidden">
         <Image
-          src="/image/home/homeServices/backdrop.jpg"
+          src="/home/homeServices/backdrop.jpg"
           alt="Services Visualizer"
           width={1000}
           height={0}
@@ -40,8 +40,8 @@ export default function Home() {
         <Tint className="-z-10 blur-[7px]" alpha={0.5} />
         <PanelDivider height={3} />
         <HomeServices />
-        <PanelDivider height={3} />
       </div>
+      <Footer />
     </div>
   );
 }

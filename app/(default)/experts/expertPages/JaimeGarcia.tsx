@@ -8,7 +8,7 @@ const JaimeGarcia = () => {
         Mr. Garcia earned his{" "}
         <StyledList
           items={["Bachelor of Science", "Mechanical Engineering"]}
-          conjunction2=" in "
+          conjunction=" in "
         />{" "}
         from California State University, Los Angeles. The acquisition of such a
         degree required the study of Physics, Strength of Materials, Static and
@@ -18,6 +18,7 @@ const JaimeGarcia = () => {
         <RouteLink
           href="/services/accident_recon"
           label="Accident Reconstruction"
+          endspc
         />
         to aid in the analysis of transportation accidents and premises
         liability issues.
@@ -29,12 +30,8 @@ const JaimeGarcia = () => {
         Reconstruction (such as the angle of impact, crush depths, change in
         velocity, G-forces, speed of the vehicles involved, and the acceleration
         and forces experienced as a result of a collision). For{" "}
-        <RouteLink
-          href="/services/premises"
-          label="premises liability"
-          endspc={false}
-        />
-        , Mr. Garcia uses his knowledge of the UBC, ANSI, and OSHA standards to
+        <RouteLink href="/services/premises" label="premises liability" />, Mr.
+        Garcia uses his knowledge of the UBC, ANSI, and OSHA standards to
         determine liability.{" "}
       </p>
       <p className="text-center text-xl">

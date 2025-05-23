@@ -9,15 +9,10 @@ const WeiChao = () => {
         <RouteLink
           href="/services/accident_recon"
           label="Accident Reconstruction"
-          endspc={false}
         />
         ,
-        <RouteLink
-          href="/services/human_factors"
-          label="Human Factors"
-          endspc={false}
-        />
-        , and Safety Analysis to identify root causes of accidents, assess
+        <RouteLink href="/services/human_factors" label="Human Factors" />, and
+        Safety Analysis to identify root causes of accidents, assess
         injury-prevention alternatives, and recommend safety practices and
         procedures as they relate to post-accident evaluation. During his 20
         years of service with the Institute of Risky and Safety Analyses, he has

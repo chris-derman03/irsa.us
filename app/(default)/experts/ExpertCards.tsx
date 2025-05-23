@@ -7,7 +7,7 @@ interface Props {
   searchParams: string;
 }
 
-const expertCards = ({ experts, searchParams }: Props) => {
+const ExpertCards = ({ experts, searchParams }: Props) => {
   const [clicked, setClicked] = useState(false);
 
   const query = searchParams.toLowerCase();
@@ -29,7 +29,7 @@ const expertCards = ({ experts, searchParams }: Props) => {
 
   if (searchFiltered.length < 1)
     return (
-      <p className="w-full h-[300px] flex items-center justify-center text-4xl">
+      <p className="w-full h-[500px] flex items-center justify-center text-4xl">
         No Results Found
       </p>
     );
@@ -53,4 +53,4 @@ const expertCards = ({ experts, searchParams }: Props) => {
   );
 };
 
-export default expertCards;
+export default ExpertCards;

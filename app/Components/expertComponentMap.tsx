@@ -1,4 +1,7 @@
-export const expertComponents: Record<string, React.ComponentType<any>> = {
+export const expertComponents: Record<
+  string,
+  () => Promise<React.ReactElement>
+> = {
   KAS: () =>
     import("../(default)/experts/expertPages/KAS").then((mod) => (
       <mod.default />
@@ -55,12 +58,12 @@ export const expertComponents: Record<string, React.ComponentType<any>> = {
     import("../(default)/experts/expertPages/ElisaCapello").then((mod) => (
       <mod.default />
     )),
-  JorgeGarcia: () =>
-    import("../(default)/experts/expertPages/JorgeGarcia").then((mod) => (
-      <mod.default />
-    )),
   Malcolm: () =>
     import("../(default)/experts/expertPages/Malcolm").then((mod) => (
+      <mod.default />
+    )),
+  JorgeGarcia: () =>
+    import("../(default)/experts/expertPages/JorgeGarcia").then((mod) => (
       <mod.default />
     )),
 };

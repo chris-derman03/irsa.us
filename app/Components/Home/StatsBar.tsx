@@ -1,13 +1,12 @@
-import classNames from "classnames";
 import StatGauge from "./StatGauge";
 import PanelDivider from "../PanelDivider";
 
 import { IoFileTrayFull, IoCalendarSharp } from "react-icons/io5";
 import { GiScales } from "react-icons/gi";
 
-const iconSizing = classNames("h-10 w-10 xl:h-18 xl:w-18");
-
 const StatsBar = () => {
+  const iconSizing = "h-10 w-10 xl:h-18 xl:w-18";
+
   return (
     <>
       <div className="w-full pt-5 px-5 md:px-10 lg:px-20 xl:px-30 2xl:px-50 text-center">
@@ -16,13 +15,7 @@ const StatsBar = () => {
           <span className="italic">Litigation Support</span> since 1974.
         </p>
       </div>
-      <div
-        className={classNames({
-          "w-full flex items-center p-10 xl:py-20 gap-10": true,
-          "flex-col justify-center": true,
-          "md:flex-row md:justify-around": true,
-        })}
-      >
+      <div className="w-full flex items-center p-10 xl:py-20 gap-10 flex-col justify-center md:flex-row md:justify-around">
         <StatGauge
           stat="Cases"
           value={15000}
