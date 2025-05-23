@@ -13,13 +13,15 @@ const FixedBackgroundPage = ({ src, alt, alpha = 0.55, content }: Props) => {
   return (
     <>
       <div className="fixed w-full h-screen -z-10">
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          style={{ objectFit: "cover" }}
-          priority
-        />
+        {src && (
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            style={{ objectFit: "cover" }}
+            priority
+          />
+        )}
         <Tint alpha={alpha} />
       </div>
 
