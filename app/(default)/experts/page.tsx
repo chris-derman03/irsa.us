@@ -3,7 +3,7 @@ import Tint from "@/app/Components/Tint";
 import Image from "next/image";
 import Body from "./Body";
 // import FixedBackgroundPage from "@/app/Components/FixedBackgroundPage";
-import Footer from "@/app/Components/Footer";
+import Footer from "@/app/Components/Footer/Footer";
 
 const page = async () => {
   const experts = engineerData.engineers;

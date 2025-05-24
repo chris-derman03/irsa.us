@@ -1,4 +1,4 @@
-import Footer from "@/app/Components/Footer";
+import Footer from "@/app/Components/Footer/Footer";
 import PanelDivider from "@/app/Components/PanelDivider";
 
 const admins = [

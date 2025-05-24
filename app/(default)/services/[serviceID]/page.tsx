@@ -47,7 +47,7 @@ const ServicePage = async ({ params }: Props) => {
             <PageContent />
           ) : (
             <div>
-              ERROR 404 <span className="text-[var(--gold)]">{serviceID}</span>{" "}
+              ERROR 404 <span className="text-secondary">{serviceID}</span>{" "}
               Service Not Found.
             </div>
           )}

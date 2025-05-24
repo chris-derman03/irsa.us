@@ -1,6 +1,6 @@
 import Tint from "@/app/Components/Tint";
 import Image from "next/image";
-import Footer from "@/app/Components/Footer";
+import Footer from "@/app/Components/Footer/Footer";
 
 interface Props {
   src: string;
@@ -25,8 +25,8 @@ const FixedBackgroundPage = ({ src, alt, alpha = 0.55, content }: Props) => {
         <Tint alpha={alpha} />
       </div>
 
-      <div className="absolute w-full min-h-[calc(100vh+250px)] flex flex-col items-center justify-between gap-15">
-        {content}
+      <div className="absolute w-full flex flex-col items-center justify-between gap-15">
+        <div className="min-h-screen w-full">{content}</div>
         <Footer />
       </div>
     </>

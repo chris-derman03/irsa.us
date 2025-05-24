@@ -11,7 +11,7 @@ import PanelDivider from "@/app/Components/PanelDivider";
 import { expertComponents } from "@/app/Components/expertComponentMap";
 import Link from "next/link";
 import StyledList from "@/app/Components/StyledList";
-import Footer from "@/app/Components/Footer";
+import Footer from "@/app/Components/Footer/Footer";
 import { Expert } from "../ExpertCard";
 
 interface Props {

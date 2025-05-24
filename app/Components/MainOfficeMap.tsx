@@ -1,31 +1,3 @@
-// "use client";
-// import { useEffect, useRef } from "react";
-// import { Loader, Marker } from "@googlemaps/js-api-loader";
-
-// function MainOfficeMap() {
-//     const googlemap = useRef(null);
-
-//     useEffect(() => {
-//         const loader = new Loader({
-//         apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-//         version: 'weekly',
-//         });
-//         let map;
-//         loader.load().then(() => {
-//         map = new google.maps.Map(googlemap.current, {
-//             center: {lat: 34.16664651953603, lng: -118.59702971288436},
-//             zoom: 18,
-//         });
-//         });
-//     });
-
-//     return (
-//         <div id="map" style={{ height: "100%", width: "100%" }} ref={googlemap} />
-//     );
-// }
-
-// export default MainOfficeMap;
-
 "use client";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
@@ -41,7 +13,7 @@ const center = {
   lng: -118.59702971288436,
 };
 
-const MainOfficeMap = () => {
+const MainOfficeMap = ({ onMapLoad }: { onMapLoad: () => void }) => {
   if (!process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY)
     return (
       <div
@@ -56,7 +28,13 @@ const MainOfficeMap = () => {
     );
 
   return (
-    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
+    <LoadScript
+      googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
+      onLoad={() => {
+        console.log("Map loaded");
+        onMapLoad();
+      }}
+    >
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
         <Marker position={center} />
       </GoogleMap>

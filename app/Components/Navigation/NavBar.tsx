@@ -1,12 +1,12 @@
 "use client";
 import "./NavStyles.css";
 import NavPanel from "./NavPanel";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
 import { IoCloseOutline } from "react-icons/io5";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Picture from "../Picture";
 
 const NavBar = () => {
   const [panelOut, setPanelOut] = useState(false);
@@ -40,10 +40,15 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="z-[1000] tinted h-full w-full flex items-center justify-between px-5 md:px-7">
+      <nav className="z-[1000] tinted h-full w-full flex items-center justify-between px-5 md:px-7 backdrop-blur-[2px]">
         <div className="relative h-8/10 aspect-square">
           <Link href="/">
-            <Image src={"/utils/logoDark.png"} alt="IRSA" fill />
+            <Picture
+              src={"/utils/logoDark.png"}
+              alt="IRSA"
+              override
+              className="w-full h-full shadow-none"
+            />
           </Link>
         </div>
         <h1 className="hidden md:inline text-center text-2xl">

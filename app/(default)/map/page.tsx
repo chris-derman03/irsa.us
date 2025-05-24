@@ -1,5 +1,5 @@
 import FixedBackgroundPage from "@/app/Components/FixedBackgroundPage";
-import Content from "./Content";
+import Content from "../contact/Content";
 
 const page = () => {
   return (

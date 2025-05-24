@@ -5,7 +5,7 @@ import HomePageDescription from "../Components/Home/HomePageDescription";
 import Tint from "../Components/Tint";
 import HomeServices from "../Components/Home/HomeServices";
 import Image from "next/image";
-import Footer from "../Components/Footer";
+import Footer from "../Components/Footer/Footer";
 
 export default function Home() {
   return (
