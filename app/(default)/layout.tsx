@@ -14,7 +14,7 @@ export default async function DefaultLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overscroll-none">
       <body className="carbon min-h-screen flex flex-col">
         <header className="fixed top-0 left-0 z-[1000] w-full h-[100px]">
           <NavBar />

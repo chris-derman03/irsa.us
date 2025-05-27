@@ -84,7 +84,8 @@
       "titles": ["Senior Forensic Scientist"],
       "degrees": ["B.S."],
       "email": "jgarcia@irsa.us",
-      "specialties": ["Accident Reconstruction", "Premises Liability", "EDR"]
+      "specialties": ["Accident Reconstruction", "Premises Liability", "EDR"],
+      "CV": "CV - Jorge Garcia - May 2025.pdf"
     },
     {
       "id": "jaime-garcia",

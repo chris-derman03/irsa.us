@@ -36,6 +36,7 @@ const page = async () => {
           fill
           style={{ objectFit: "cover" }}
           alt={"Experts Backdrop"}
+          priority
         />
         <Tint alpha={0.7} />
         <h1 className="text-7xl z-10">Experts</h1>

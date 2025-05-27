@@ -15,7 +15,7 @@ const TitleSlideshow = async () => {
       <OverlayBox>
         <Slideshow images={images} />
       </OverlayBox>
-      <OverlayBox className="flex items-center justify-center pt-[100px]">
+      <OverlayBox className="flex items-center justify-center md:pt-[20vh]">
         <div className="flex flex-col items-center gap-10">
           <p className="w-9/10 font-bold text-center text-[2.5rem] md:text-7xl">
             Expert Witness Services for Attorneys
