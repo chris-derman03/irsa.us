@@ -46,13 +46,13 @@ const NavPanel = forwardRef<
   return (
     <div
       ref={ref}
-      className={`absolute top-full left-0 z-[-1] w-full
-                        tinted panel pb-10 px-10
-                        transition-all duration-300 transform ${
-                          show
-                            ? "translate-y-0 opacity-100"
-                            : "-translate-y-[700px] opacity-0"
-                        }`}
+      className={`fixed top-[100px] left-0 -z-1 w-full h-full
+              tinted panel pb-10 px-10 overflow-y-auto
+              transition-all duration-300 transform ${
+                show
+                  ? "translate-y-0 opacity-100"
+                  : "-translate-y-[100vh] opacity-0 pointer-events-none"
+              }`}
     >
       <div className="w-full flex">
         <ul className="flex flex-col w-7/10 md:w-5/10 lg:w-7/10">
