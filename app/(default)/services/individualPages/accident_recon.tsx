@@ -19,7 +19,9 @@ const accident_recon = () => {
     <>
       <div className="tintedPanel flex flex-col items-center gap-10 py-10 px-[5%] 2xl:px-[15%] mb-50">
         <h1 className="font-bold text-2xl md:text-3xl text-center">
-          The process of investigating, analyzing, and drawing conclusions about
+          The application of scientific methodology to recreate how an accident
+          or incident occured; investigating, analyzing, and drawing conclusions
+          about
           <StyledList items={["events", "parameters", "causes"]} /> of an
           accident.
         </h1>
@@ -77,7 +79,7 @@ const accident_recon = () => {
           Automotive Accidents
         </h1>
         <p className="text-base md:text-xl text-center">
-          To unveil the truth of automotive accidents, we calculate and download
+          To unveil the cause of automotive accidents, we calculate and download
           <RouteLink href={"/services/cdr"} label={"Crash Data"} endspc />
           (EDR), impacts, delta velocity, velocity of G-forces, jerk,
           conservation of energy as well as measure crush-depth analysis.

@@ -12,7 +12,7 @@ const HomePageDescription = () => {
         <span className="italic">
           The Institute of Risk and Safety Analyses
         </span>{" "}
-        (The Institute) and
+        (The Institute) and{" "}
         <span className="italic">
           The Laboratory of Risk and Safety Analyses
         </span>{" "}

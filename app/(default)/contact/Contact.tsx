@@ -22,7 +22,7 @@ const Contact = () => {
 
       <div className="w-full mt-2 lg:w-[55%] flex flex-col items-center gap-5 py-5">
         <Dropdown
-          items={["carol@irsa.us", ...emails]}
+          items={["carol@irsa.us", "divider", ...emails]}
           setInput={setRecipient}
           placeholder="Recipient"
           className="w-full lg:w-8/10"

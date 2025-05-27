@@ -44,7 +44,6 @@
       "email": "ricardo@irsa.us",
       "specialties": [
         "Accident Reconstruction",
-        "Premises Liability",
         "Simulations"
       ]
     },
@@ -58,7 +57,6 @@
       "specialties": [
         "Accident Reconstruction",
         "Human Factors",
-        "Premises Liability",
         "EDR"
       ],
       "CV": "CV - Wei Chao - May 2025.pdf"
@@ -68,14 +66,15 @@
       "contentID": "BanChoi",
       "name": "Ban Choi",
       "titles": ["Senior Forensic Scientist"],
-      "degrees": ["B.S."],
+      "degrees": ["B.S.", "M.S."],
       "email": "bchoi@irsa.us",
       "specialties": [
         "Accident Reconstruction",
         "Simulations",
-        "Biomechanics",
+        "Premises Liability",
         "EDR"
-      ]
+      ],
+      "CV": "CV - Ban Choi - May 2025.pdf"
     },
     {
       "id": "jorge-garcia",
@@ -84,7 +83,7 @@
       "titles": ["Senior Forensic Scientist"],
       "degrees": ["B.S."],
       "email": "jgarcia@irsa.us",
-      "specialties": ["Accident Reconstruction", "Premises Liability", "EDR"],
+      "specialties": ["Accident Reconstruction", "EDR"],
       "CV": "CV - Jorge Garcia - May 2025.pdf"
     },
     {
@@ -108,7 +107,6 @@
         "Animations",
         "Accident Reconstruction",
         "Human Factors",
-        "Biomechanics",
         "EDR"
       ],
       "CV": "CV - Librado Mancilla - May 2025.pdf"
@@ -129,7 +127,7 @@
       "titles": ["Forensic Scientist"],
       "degrees": ["B.S."],
       "email": "ckrieger@irsa.us",
-      "specialties": ["Premises Liability", "EDR"]
+      "specialties": ["Accident Reconstruction", "Premises Liability", "EDR"]
     },
     {
       "id": "alex-capello",
@@ -156,7 +154,7 @@
       "titles": ["Associate Forensic Scientist"],
       "degrees": ["B.S."],
       "email": "s.larmon@irsa.us",
-      "specialties": ["Premises Liability", "EDR"]
+      "specialties": ["Premises Liability", "Accident Reconstruction", "EDR"]
     },
     {
       "id": "christian-dermanuelian",
@@ -178,7 +176,8 @@
       "name": "Malcolm",
       "titles": ["Test Dummy"],
       "degrees": ["N/A"],
-      "email": "N/A"
+      "email": "N/A",
+      "hidden": true
     }
   ]
 }

@@ -13,7 +13,7 @@ const animations = () => {
         These are problems all <StyledList items={["solved"]} /> by animations.
       </p>
       <p className="text-center text-xl">
-        Our engineers investigate and gather information from your case to
+        Our scientists investigate and gather information from your case to
         create professional, high-quality animations to shed light on the truth.
       </p>
       <div className="w-full flex flex-col gap-4 items-center">
@@ -41,11 +41,6 @@ const animations = () => {
       </p>
 
       <p className="text-center text-xl">
-        Unlike <span className="italic">animations</span>, which are visual
-        tools, <span className="italic">simulations</span> are{" "}
-        <StyledList items={["scientific"]} />.
-        <br />
-        <br />
         They use precise{" "}
         <StyledList
           items={["formulae", "robust software", "Physics Engines"]}

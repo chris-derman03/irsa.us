@@ -46,17 +46,17 @@ const NavBar = () => {
   }, [panelOut]);
 
   // Stop body scrolling while panel is out
-  useEffect(() => {
-    if (panelOut) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-  }, [panelOut]);
+  // useEffect(() => {
+  //   if (panelOut) {
+  //     document.body.classList.add("overflow-hidden");
+  //   } else {
+  //     document.body.classList.remove("overflow-hidden");
+  //   }
+  // }, [panelOut]);
 
   return (
     <>
-      <nav className="z-[1000] tinted h-full w-full flex items-center justify-between px-5 md:px-7 backdrop-blur-[2px]">
+      <nav className="z-[1000] relative tinted h-full w-full flex items-center justify-between px-5 md:px-7 backdrop-blur-[2px]">
         <div className="relative h-8/10 aspect-square">
           <Link href="/">
             <Picture

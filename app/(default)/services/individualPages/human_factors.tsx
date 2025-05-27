@@ -1,9 +1,17 @@
+import PanelDivider from "@/app/Components/PanelDivider";
 import Picture from "@/app/Components/Picture";
 import StyledList from "@/app/Components/StyledList";
 
 const human_factors = () => {
   return (
     <div className="tintedPanel flex flex-col items-center gap-10 py-10 lg:py-15 px-[5%] 2xl:px-[15%]">
+      <h1 className="text-center text-3xl">
+        The collection of studies pertaining to how humans interact with their
+        environment in stressfull and emergency situtaions.
+      </h1>
+
+      <PanelDivider />
+
       <div className="flex flex-col-reverse items-center md:flex-row gap-10">
         <div className="flex flex-col gap-20 md:w-5/10">
           <Picture

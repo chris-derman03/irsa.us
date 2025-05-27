@@ -30,14 +30,14 @@ const DropdownItems = ({
 
   return (
     <div
-      className={`absolute opacity-97 min-w-full z-10000 bg-gray-900 rounded-b-2xl top-full ${
+      className={`absolute opacity-97 min-w-full z-100 bg-gray-900 rounded-b-2xl top-full ${
         clicked ? "max-h-200" : "max-h-[0px] pointer-events-none"
       } transition-[max-height] duration-700 ${
         showBorder ? "border-3" : "border-0"
       }`}
     >
       <ul
-        className={`flex flex-col gap-1 px-5 py-2 ${
+        className={`flex flex-col gap-1 px-5 py-5 ${
           clicked
             ? "opacity-97 transition-opacity duration-1500"
             : "opacity-0 transition-opacity duration-500"
@@ -45,17 +45,21 @@ const DropdownItems = ({
       >
         {items.map((i) => (
           <li key={i}>
-            <button
-              onClick={() => {
-                setDisplay(i);
-                setInput(i);
-                setClicked(false);
-              }}
-            >
-              <p className="text-2xl font-bold hover:text-gray-800 transition-colors duration-250">
-                {i}
-              </p>
-            </button>
+            {i === "divider" ? (
+              <div className="w-full h-[2px] bg-gray-500 my-3" />
+            ) : (
+              <button
+                onClick={() => {
+                  setDisplay(i);
+                  setInput(i);
+                  setClicked(false);
+                }}
+              >
+                <p className="text-2xl font-bold hover:text-gray-800 transition-colors duration-250">
+                  {i}
+                </p>
+              </button>
+            )}
           </li>
         ))}
       </ul>

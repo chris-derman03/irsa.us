@@ -98,27 +98,6 @@ const misc = () => {
 
       <PanelDivider />
 
-      <h1 className="text-secondary text-4xl text-center">INVESIGATIONS</h1>
-      <div className="flex flex-col lg:flex-row gap-10">
-        <Picture
-          src="/services/misc/investigations.jpg"
-          alt="Investigations Visualizer"
-          override
-          className="w-full lg:w-5/10 h-auto"
-        />
-        <p className="w-full lg:w-5/10 h-auto text-xl font-bold">
-          IRSA conducts <StyledList items={["background checks"]} /> using
-          computer searches, <StyledList items={["interviews"]} /> people to
-          gather vital information, <StyledList items={["researches"]} />{" "}
-          locations of the given accident, <StyledList items={["examines"]} />{" "}
-          records, <StyledList items={["reviews"]} /> surveillance footage as
-          well as collect, interpret, analyze, and evaluate{" "}
-          <StyledList items={["evidence"]} /> of the subject matter/case.
-        </p>
-      </div>
-
-      <PanelDivider />
-
       <h1 className="text-secondary text-4xl text-center">
         MEDIATION & ARBITRATION
       </h1>

@@ -4,14 +4,14 @@ import Location from "./Location";
 import Contact from "./Contact";
 import LoadingSpinner from "@/app/Components/LoadingSpinner";
 
-const Content = () => {
+const Content = ({ excludeContact = false }: { excludeContact?: boolean }) => {
   const [mapLoaded, setMapLoaded] = useState(false);
 
   return (
     <div className="mt-[10vh] lg:mt-[20vh] w-full flex flex-col items-center gap-30 p-10">
       {mapLoaded ? (
         <>
-          <Contact />
+          {!excludeContact && <Contact />}
           <Location onMapLoad={() => setMapLoaded(true)} />
         </>
       ) : (

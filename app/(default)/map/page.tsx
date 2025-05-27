@@ -7,7 +7,7 @@ const page = () => {
       src="/contact/backdrop.jpg"
       alt="Contact Page Background"
       alpha={0.8}
-      content={<Content />}
+      content={<Content excludeContact />}
     />
   );
 };

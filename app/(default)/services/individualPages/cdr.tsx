@@ -22,17 +22,21 @@ const cdr = () => {
             <ul className="list-disc pl-5 py-7 text-xl font-bold">
               <li>
                 <RouteLink
-                  href={"/documents/CDR_v21.3_Vehicle_Coverage_List_R1_0_0.pdf"}
+                  href={
+                    "/services/cdr/CDR_v25.0_Vehicle_Coverage_List_R1_0_0.pdf"
+                  }
                   label="BOSCH Supported Vehicles"
                 />
               </li>
               <li>Tesla</li>
               <li>Hyundai/Kia</li>
+              <li>Heavy Tractor Trailors</li>
             </ul>
             <p className="w-full h-auto text-xl font-bold">
               Data is read from AirbagControl Modules (ACM), Roll-over Sensors
               (ROS), and Powertrain Control Modules (PCM) installed in supported
-              vehicles.
+              vehicles. For heavy tractor trailers, the data comes from the
+              Engine Control Module (ECM).
             </p>
           </div>
         </div>

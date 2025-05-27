@@ -1,5 +1,6 @@
 import Link from "next/link";
 import servicesData from "../../data/services.json";
+import StyledList from "../StyledList";
 
 const HomeServices = () => {
   const linkStyles =
@@ -8,12 +9,18 @@ const HomeServices = () => {
     "hover:brightness-50 hover:scale-99 transiton-all duration-200 ease-in-out";
 
   return (
-    <div className="w-full flex flex-col lg:flex-row justify-between px-10 2xl:px-50 lg:gap-10 xl:gap-0 pb-20">
-      <div className="flex flex-col gap-5 w-full lg:w-4/10">
-        <h1 className="text-7xl">Services</h1>
-        <p className="text-3xl pl-5 md:pl-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-          voluptates?
+    <div className="w-full flex flex-col lg:flex-row justify-between px-10 2xl:px-50 lg:gap-10 xl:gap-10 pb-20">
+      <div className="flex flex-col gap-10 w-full lg:w-5/10 2xl:w-4/10">
+        <h1 className="text-7xl text-center lg:text-left">Services</h1>
+        <p className="text-xl md:text-3xl pl-5 md:pl-10 hidde">
+          <span className="italic">Discover</span> our range of expert witness
+          services, each backed by decades of scientific experience and
+          real-world application.
+        </p>
+        <p className="text-xl md:text-3xl pl-5 md:pl-10 hidde">
+          Each service is designed to reconstruct, visualize, and explain
+          real-world events with <StyledList items={["precision", "clarity"]} />
+          .
         </p>
       </div>
 

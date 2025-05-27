@@ -17,13 +17,12 @@ const TitleSlideshow = async () => {
       </OverlayBox>
       <OverlayBox className="flex items-center justify-center md:pt-[20vh]">
         <div className="flex flex-col items-center gap-10">
-          <p className="w-9/10 font-bold text-center text-[2.5rem] md:text-7xl">
+          <p className="w-9/10 font-bold text-center text-5xl md:text-7xl">
             Expert Witness Services for Attorneys
           </p>
-          <p className="w-8/10 text-center text-m text-gray-400">
-            The Institute of Risk and Safety Analyses
-            <br />
-            The Lab of Risk and Safety Analyses
+          <p className="w-8/10 lg:w-5/10 text-center font-bold text-lg text-gray-400">
+            We leverage Math, Physics, Science, Engineering, and Technology to
+            uncover the truth and provide the answers you need for your case.
           </p>
           <div className="grid grid-cols-2 grid-rows-2 gap-x-5 gap-y-4 justify-items-center">
             <Button text="Experts" href="/experts" />

@@ -6,7 +6,7 @@ import StyledList from "@/app/Components/StyledList";
 const imaging_science = () => {
   return (
     <div className="tintedPanel flex flex-col items-center gap-20 py-10 lg:py-15 px-[5%] 2xl:px-[15%]">
-      <h1 className="text-secondary text-4xl text-center">PHOTOMETRICS</h1>
+      <h1 className="text-secondary text-4xl text-center">Image Science</h1>
       <div className="flex flex-col-reverse lg:flex-row">
         <Picture
           src="/services/imaging_science/img1.jpg"

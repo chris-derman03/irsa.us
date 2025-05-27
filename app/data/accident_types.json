@@ -40,12 +40,13 @@
             "img": "/home/accidents/industrial.png"
         },
         {
-            "type": "Product Assessments and Accidents",
+            "type": "Other",
             "examples": [
                 "Premises Safety",
                 "Slip/Trip & Falls",
                 "Falling Objects",
                 "Criminal Defense & Prosecution",
+                "Product Liability",
                 "Warnings & Labels",
                 "Safety Audits"
             ],

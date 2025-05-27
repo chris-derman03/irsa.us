@@ -46,9 +46,9 @@ const NavPanel = forwardRef<
   return (
     <div
       ref={ref}
-      className={`fixed top-[100px] left-0 -z-1 w-full h-full
-              tinted panel pb-10 px-10 overflow-y-auto
-              transition-all duration-300 transform ${
+      className={`absolute top-full left-0 z-[900] w-full
+              tinted panel pb-10 px-10 max-h-[80vh] overflow-auto overscroll-none
+              transition-all duration-500 transform ${
                 show
                   ? "translate-y-0 opacity-100"
                   : "-translate-y-[100vh] opacity-0 pointer-events-none"

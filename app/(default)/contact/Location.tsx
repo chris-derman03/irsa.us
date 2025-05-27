@@ -37,7 +37,7 @@ const Location = ({ onMapLoad }: { onMapLoad: () => void }) => {
           <div className={InfoRowStyle}>
             <MdEmail className={IconStyles} />
             <h2 className={ValueStyles}>
-              expert@irsa.us <br /> kenneth@irsa.us
+              kenneth@irsa.us
               <br /> carol@irsa.us
             </h2>
           </div>

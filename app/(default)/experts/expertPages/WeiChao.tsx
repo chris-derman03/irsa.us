@@ -15,9 +15,9 @@ const WeiChao = () => {
         <RouteLink href="/services/human_factors" label="Human Factors" />, and
         Safety Analysis to identify root causes of accidents, assess
         injury-prevention alternatives, and recommend safety practices and
-        procedures as they relate to post-accident evaluation. During his 20
-        years of service with the Institute of Risky and Safety Analyses, he has
-        been involved in over{" "}
+        procedures as they relate to post-accident evaluation. During his more
+        than two decades of service with the Institute of Risky and Safety
+        Analyses, he has been involved in over{" "}
         <StyledList items={["2,500 forensic investigations"]} /> which have
         included vehicle and pedestrian collisions, roadway design, signal
         phasing, premises liability, industrial and construction safety,

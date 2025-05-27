@@ -5,56 +5,52 @@ const BanChoi = () => {
   return (
     <div className="flex flex-col gap-10 px-0 md:px-[10%] lg:px-[15%] 2xl:px-[25%] items-center">
       <p className="text-center text-xl">
-        Mr. Choi earned a Bachelor of Science degree in{" "}
-        <StyledList
-          items={["Physics", "California State University, Fullerton"]}
-          conjunction=" from "
-        />
-        . His degree allotted him the ability to perform duties in
-        <StyledList
-          items={[
-            "Mechanics",
-            "Thermodynamics",
-            "Statistical Analysis",
-            "Computer Aided Analysis",
-            "Electrodynamics",
-          ]}
-        />
-        . This technical degree has given him an understanding of the major
-        scientific principles that are fundamental to{" "}
-        <RouteLink href="/services/biomechanics" label="Biomechanics" />,{" "}
-        <RouteLink href="/services/human_factors" label="Human Factors" />
-        ,
+        As a forensic scientist, Mr. Choi specialize in the scientific analysis
+        of accidents by applying principles from physics, engineering, and human
+        factors. His work involves detailed{" "}
+        <RouteLink href="/services/accident_recon" label="reconstructions" /> of
+        events in both automobile collisions and{" "}
+        <RouteLink href="/services/premises" label="premises liability" />{" "}
+        incidents to determine causes, contributing factors, and the potential
+        for injury.
+      </p>
+
+      <p className="text-center text-xl">
+        In automobile{" "}
         <RouteLink
           href="/services/accident_recon"
-          label="Accident Reconstruction"
+          label="accident reconstruction"
         />
-        , and{" "}
-        <RouteLink
-          href="/services/animations_simulations"
-          label="Computer Simulations"
-        />
-        . Additionally, Mr. Choi obtained his certifications in XL Tribometrist
-        as well as{" "}
-        <RouteLink href="/services/cdr" label="Crash Data Retrieval" />.{" "}
+        , he uses concepts such as conservation of momentum, energy transfer,
+        and vehicle kinematics to analyze crash dynamics. This includes
+        passenger vehicle collisions, as well as bicycle and pedestrian
+        accidents. He also incorporates{" "}
+        <RouteLink href="/services/human_factors" label="human factors" />{" "}
+        principles such as perception-response time to assess how individuals
+        may have perceived and responded to events leading up to a collision.
       </p>
+
       <p className="text-center text-xl">
-        Mr. Choi applies his knowledge of and experience with the principles of
-        Physics and Mathematics to analyze and reconstruct accidents. For{" "}
-        <StyledList items={["traffic accidents"]} />, Mr. Choi can calculate
-        angles of impact, crush depths, delta-V’s, G- forces, mechanism for
-        injury, and speeds of impact. For{" "}
-        <RouteLink href="/services/premises" label="premises liability" /> and
-        industrial accidents, he uses his knowledge of the UBC/CBC/ADA codes,
-        and ANSI/ASTM/OSHA standards to determine liability.{" "}
+        For <RouteLink href="/services/premises" label="premises liability" />{" "}
+        cases, he applies his knowledge of building codes, industry standards,
+        and federal regulations to evaluate accident causes and safety
+        compliance. These cases often involve slip/trip and falls, falling
+        objects, and construction site incidents.
       </p>
+
       <p className="text-center text-xl">
-        Mr. Choi operates his skill in creating computer simulations and CAD
-        diagrams. He employs the discipline of Accident Reconstruction to{" "}
-        <StyledList items={["analyze safety"]} /> in designs, practices, and
-        procedures. His forensic investigations have included the following
-        types of accidents: automobile vs. automobile; automobile vs.
-        pedestrian; slip and fall; trip and fall; and premises liability.
+        In biomechanical analysis, he leverages his background in{" "}
+        <StyledList items={["physics", "biomedical engineering"]} /> to assess
+        the forces involved in an incident and the potential for injury. He uses
+        established metrics such as the Head Injury Criterion (HIC), Neck Injury
+        Criterion (Nij), delta-V, and acceleration profiles.
+      </p>
+
+      <p className="text-center text-xl text-secondary italic">
+        To date, he has analyzed over 250 vehicle accident cases and more than
+        300 premises liability cases. He provides expert opinions in accident
+        reconstruction, biomechanics, and human factors through reports,
+        declarations, consultations, and testimony.
       </p>
     </div>
   );

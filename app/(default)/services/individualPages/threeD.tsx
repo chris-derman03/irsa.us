@@ -2,6 +2,7 @@ import PanelDivider from "@/app/Components/PanelDivider";
 import ThreeDEmbedding from "./ThreeDEmbedding";
 import RouteLink from "@/app/Components/RouteLink";
 import Picture from "@/app/Components/Picture";
+import StyledList from "@/app/Components/StyledList";
 
 const modelData = [
   {
@@ -30,7 +31,7 @@ const threeD = () => {
       <PanelDivider />
 
       <p className="font-bold text-lg md:text-2xl text-center">
-        3D scanning is a vital tool in Forensic Science, allowing for a{" "}
+        3D scanning is a vital tool in Forensic Sciences, allowing for a{" "}
         <span className="text-secondary"> digital</span> or
         <span className="text-secondary"> physical</span> representation of an
         environment, object, scene, or event that is much easier for viewers to
@@ -45,7 +46,7 @@ const threeD = () => {
           href={"/services/animations_simulations"}
           label={"animations"}
         />
-        , diagrams, and models.
+        , scaled diagrams, and models.
       </p>
 
       <PanelDivider />
@@ -105,25 +106,31 @@ const threeD = () => {
       <PanelDivider />
 
       <div className="w-full flex flex-col xl:flex-row items-center gap-5 md:gap-20">
-        <p className="text-sm md:text-lg xl:text-lg">
-          <>
-            <span className="xl:hidden">Below</span>
-            <span className="hidden xl:inline">To the right</span>
-          </>{" "}
-          is the <span className="text-secondary"> Faro Focus X330</span> 3D
-          scanner, one of the devices our Lab utilizes. The scanner provides
-          very precise mappings of its environment. First, the laser scanner
-          emits a laser beam from a rotating mirror out towards the area being
-          scanned. Then, the unit distributes the laser beam to a vertical range
-          of 300° and a horizontal range of 360°. The laser beam is then
-          reflected to the scanner by the object in its path. The distance to
-          the object defining an area is calculated as well as the relative
-          vertical and horizontal angles. The data is captured and transmitted
-          via WLAN for calculating exact 3D renderings. The Forensic Scientists
-          at IRSA are all trained in the proper operation of the 3D scanner.
-        </p>
+        <div className="flex flex-col gap-5">
+          <h2 className="text-3xl text-center font-bold text-secondary">
+            What is LiDAR?
+          </h2>
+          <p className="text-sm md:text-lg xl:text-lg">
+            LiDAR scanners provide very precise mappings of their environments.
+            First, the laser scanner <StyledList items={["emits"]} /> a laser
+            beam from a rotating mirror out towards the area being scanned.
+            Then, the unit <StyledList items={["distributes"]} /> the laser beam
+            to a vertical range of 300° and a horizontal range of 360°. The
+            laser beam is then <StyledList items={["reflected"]} /> to the
+            scanner by the object in its path. The distance to the object
+            defining an area is <StyledList items={["calculated"]} /> as well as
+            the relative vertical and horizontal angles. The data is{" "}
+            <StyledList items={["captured", "transmitted"]} /> via WLAN for
+            calculating exact 3D renderings.
+          </p>
+          <p className="text-sm md:text-lg xl:text-lg text-center italic">
+            The Forensic Scientists at IRSA are all trained in the proper
+            operation of the 3D scanner.
+          </p>
+        </div>
+
         <Picture
-          src="/services/threeD/focusX330.jpg"
+          src="/services/threeD/Leica-BLK360-G2.webp"
           alt="FARO Focus X330"
           className="shadow-[0_0_15px_white] w-[100%] xl:w-[400px] h-auto rounded-[8px]"
           override

@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: "IRSA",
   description:
     "Institute of Risk and Safety Analysis. Expert Witness. Expert Witnesses. Forensics. Forensic Science. Accident Reconstruction.",
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/utils/favicon-light.ico",
+        href: "/utils/favicon-light.ico",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/utils/favicon-dark.ico",
+        href: "/utils/favicon-dark.ico",
+      },
+    ],
+  },
 };
 
 export default async function DefaultLayout({
