@@ -1,71 +1,72 @@
 {
-    "services": [
-        {
-            "serviceID": "animations_simulations",
-            "name": "Animations & Simulations",
-            "imgPath": "/services/animations_simulations/",
-            "href": "/services/animations_simulations"
-        },
-        {
-            "serviceID": "threeD",
-            "subtitle": "Trucks, Cars, Buildings, Premises, Crime Scenes, etc.",
-            "name": "3D Modeling",
-            "imgPath": "/services/threeD/",
-            "href": "/services/threeD"
-        },
-        {
-            "serviceID": "accident_recon",
-            "name": "Accident Reconstruction",
-            "imgPath": "/services/accident_recon/",
-            "href": "/services/accident_recon"
-        },
-        {
-            "serviceID": "criminal",
-            "name": "Criminal Proceedings",
-            "imgPath": "/services/criminal/",
-            "href": "/services/criminal"
-        },
-        {
-            "serviceID": "biomechanics",
-            "name": "Biomechanics",
-            "imgPath": "/services/biomechanics/",
-            "href": "/services/biomechanics"
-        },
-        {
-            "serviceID": "drone",
-            "name": "Drone",
-            "imgPath": "/services/drone/",
-            "href": "/services/drone"
-        },
-        {
-            "serviceID": "human_factors",
-            "name": "Human Factors",
-            "imgPath": "/services/human_factors/",
-            "href": "/services/human_factors"
-        },
-        {
-            "serviceID": "premises",
-            "name": "Premises Liability",
-            "imgPath":  "/services/premises/",
-            "href": "/services/premises"
-        },
-        {
-            "serviceID": "cdr",
-            "name": "Crash Data Retrieval (EDR/CDR)",
-            "imgPath":  "/services/cdr/",
-            "href": "/services/cdr"
-        },
-        {
-            "serviceID": "imaging_science",
-            "name": "Imaging Science",
-            "imgPath":  "/services/imaging_science/",
-            "href": "/services/imaging_science"
-        },
-        {
-            "serviceID": "misc",
-            "name": "Miscellanious Services",
-            "imgPath":  "/services/misc/",
-            "href": "/services/misc"
-        }
-    ]
+  "services": [
+    {
+      "serviceID": "animations_simulations",
+      "name": "Animations & Simulations",
+      "imgPath": "/services/animations_simulations/",
+      "href": "/services/animations_simulations",
+      "metadata": "Computer aided animating/simulating service."
+    },
+    {
+      "serviceID": "threeD",
+      "subtitle": "Trucks, Cars, Buildings, Premises, Crime Scenes, etc.",
+      "name": "3D Modeling",
+      "imgPath": "/services/threeD/",
+      "href": "/services/threeD"
+    },
+    {
+      "serviceID": "accident_recon",
+      "name": "Accident Reconstruction",
+      "imgPath": "/services/accident_recon/",
+      "href": "/services/accident_recon"
+    },
+    {
+      "serviceID": "criminal",
+      "name": "Criminal Proceedings",
+      "imgPath": "/services/criminal/",
+      "href": "/services/criminal"
+    },
+    {
+      "serviceID": "biomechanics",
+      "name": "Biomechanics",
+      "imgPath": "/services/biomechanics/",
+      "href": "/services/biomechanics"
+    },
+    {
+      "serviceID": "drone",
+      "name": "Drone",
+      "imgPath": "/services/drone/",
+      "href": "/services/drone"
+    },
+    {
+      "serviceID": "human_factors",
+      "name": "Human Factors",
+      "imgPath": "/services/human_factors/",
+      "href": "/services/human_factors"
+    },
+    {
+      "serviceID": "premises",
+      "name": "Premises Liability",
+      "imgPath": "/services/premises/",
+      "href": "/services/premises"
+    },
+    {
+      "serviceID": "cdr",
+      "name": "Crash Data Retrieval (EDR/CDR)",
+      "imgPath": "/services/cdr/",
+      "href": "/services/cdr"
+    },
+    {
+      "serviceID": "imaging_science",
+      "name": "Imaging Science",
+      "imgPath": "/services/imaging_science/",
+      "href": "/services/imaging_science"
+    },
+    {
+      "serviceID": "misc",
+      "name": "Miscellanious Services",
+      "imgPath": "/services/misc/",
+      "href": "/services/misc"
+    }
+  ]
 }

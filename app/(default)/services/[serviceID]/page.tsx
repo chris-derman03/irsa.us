@@ -10,6 +10,7 @@ interface Service {
   serviceID: string;
   name: string;
   subtitle: string;
+  metadata: string;
 }
 
 const ServicePage = async ({ params }: Props) => {
@@ -44,7 +45,12 @@ const ServicePage = async ({ params }: Props) => {
       content={
         <div className="w-full mt-[15vh] p-5 md:p-10 lg:px-30">
           {PageContent ? (
-            <PageContent />
+            <>
+              <h1 className="w-full text-center text-5xl md:text-6xl mb-15">
+                {service.name}
+              </h1>
+              <PageContent />
+            </>
           ) : (
             <div>
               ERROR 404 <span className="text-secondary">{serviceID}</span>{" "}
@@ -58,3 +64,21 @@ const ServicePage = async ({ params }: Props) => {
 };
 
 export default ServicePage;
+
+import { Metadata } from "next";
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { serviceID } = await params;
+
+  const serviceData = await fs.readFile(
+    process.cwd() + "/app/data/services.json",
+    "utf-8"
+  );
+  const services: Service[] = JSON.parse(serviceData).services;
+  const service = services.find((s) => s.serviceID === serviceID);
+
+  return {
+    title: service?.name,
+    description: service?.metadata,
+  };
+}

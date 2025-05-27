@@ -4,6 +4,7 @@ import Image from "next/image";
 import Body from "./Body";
 // import FixedBackgroundPage from "@/app/Components/FixedBackgroundPage";
 import Footer from "@/app/Components/Footer/Footer";
+import { Metadata } from "next";
 
 const page = async () => {
   const experts = engineerData.engineers;
@@ -47,3 +48,8 @@ const page = async () => {
 };
 
 export default page;
+
+export const metadata: Metadata = {
+  title: "Experts",
+  description: "Staff Engineers and Forensic Scientists",
+};

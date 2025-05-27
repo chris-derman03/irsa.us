@@ -6,6 +6,7 @@ import Tint from "../Components/Tint";
 import HomeServices from "../Components/Home/HomeServices";
 import Image from "next/image";
 import Footer from "../Components/Footer/Footer";
+import { Metadata } from "next";
 
 export default function Home() {
   return (
@@ -45,3 +46,9 @@ export default function Home() {
     </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: "IRSA",
+  description:
+    "Institute of Risk and Safety Analysis. Expert Witness. Expert Witnesses. Forensics. Forensic Science. Accident Reconstruction.",
+};

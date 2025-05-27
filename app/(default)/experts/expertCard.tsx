@@ -6,6 +6,7 @@ import React from "react";
 
 export interface Expert {
   id: string;
+  contentID: string;
   name: string;
   titles: string[];
   degrees: string[];

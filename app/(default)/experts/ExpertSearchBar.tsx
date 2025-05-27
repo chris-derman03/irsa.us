@@ -56,7 +56,7 @@ const ExpertSearchBar = ({ searchParams, setSearchParams }: Props) => {
               <p className="text-3xl opacity-50 hidden md:inline">
                 Search e.g. EDR, Kenneth, Biomechanics
               </p>
-              <p className="text-3xl opacity-50 md:hidden">Search</p> :{" "}
+              <p className="text-3xl opacity-50 md:hidden">Search</p>{" "}
               <div></div>
             </>
           )}

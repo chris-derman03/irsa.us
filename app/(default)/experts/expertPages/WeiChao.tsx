@@ -1,3 +1,4 @@
+import PanelDivider from "@/app/Components/PanelDivider";
 import RouteLink from "@/app/Components/RouteLink";
 import StyledList from "@/app/Components/StyledList";
 
@@ -59,6 +60,31 @@ const WeiChao = () => {
         product defect cases, Mr. Chao addresses not only code compliance (OSHA,
         ANSI, ADA, ASTM, etc.) issues, but also presents root cause and failure
         analysis via flow charts and Ishikawa (Fishbone) diagrams.
+      </p>
+
+      <PanelDivider />
+      <h1 className="text-3xl text-secondary">EXEMPLAR CASE WORK</h1>
+
+      <p className="text-center text-xl">
+        Mr. Chao was retained as a defense expert witness in a personal injury
+        case involving allegations of a severe head injury sustained by the
+        plaintiff at a grocery store. The plaintiff claimed that a patio
+        umbrella, positioned atop a freezer, fell and struck his head. Mr. Chao
+        conducted a series of tests and provided expert opinions in the field of
+        accident reconstruction. The case proceeded to trial in 2023, resulting
+        in a defense verdict rendered by the jury.
+      </p>
+
+      <p className="text-center text-xl">
+        Mr. Chao was retained as a plaintiff’s expert witness in a wrongful
+        death case involving a fatal jetski explosion that occurred in the
+        presence of the decedent’s wife, daughters, and other family members. He
+        conducted a damage analysis and provided expert testimony regarding a
+        manufacturing defect in the fuel filler neck, which had been
+        over-torqued and damaged during installation. This defect permitted
+        gasoline vapors to escape from the fuel line into the vessel’s hull,
+        ultimately contributing to the explosion. In 2024, the jury returned a
+        verdict awarding $22.1 million to the decedent’s wife and daughters.
       </p>
     </div>
   );

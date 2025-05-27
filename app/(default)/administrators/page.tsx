@@ -1,5 +1,6 @@
 import Footer from "@/app/Components/Footer/Footer";
 import PanelDivider from "@/app/Components/PanelDivider";
+import { Metadata } from "next";
 
 const admins = [
   { name: "Wes", title: "Office Manager" },
@@ -35,3 +36,10 @@ const page = () => {
 };
 
 export default page;
+
+export const metadata: Metadata = {
+  title: "Administrators",
+  description: `IRSA main office administrators. Administrative Staff. ${admins
+    .map((a) => `${a.name} ${a.title},`)
+    .join(" ")}`,
+};

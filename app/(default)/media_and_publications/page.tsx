@@ -4,6 +4,7 @@ import StyledList from "@/app/Components/StyledList";
 import { Articles, Books, Other, RAND, Televised } from "./media";
 import Picture from "@/app/Components/Picture";
 import FixedBackgroundPage from "@/app/Components/FixedBackgroundPage";
+import { Metadata } from "next";
 
 const media = [
   {
@@ -97,3 +98,9 @@ const page = async () => {
 };
 
 export default page;
+
+export const metadata: Metadata = {
+  title: "Publications",
+  description:
+    "Media and Publications. Documentaries Televised Television News Conferences Books Editorships Research Studies Study RAND Articles Publish Published Reports",
+};

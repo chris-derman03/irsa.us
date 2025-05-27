@@ -20,21 +20,28 @@ const NavBar = () => {
 
   // Close on outside click
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleInteraction = (event: MouseEvent | KeyboardEvent) => {
       if (
+        event instanceof MouseEvent &&
         panelRef.current &&
         !panelRef.current.contains(event.target as Node)
       ) {
         setPanelOut(false);
       }
+
+      if (event instanceof KeyboardEvent && event.key === "Escape") {
+        setPanelOut(false);
+      }
     };
 
     if (panelOut) {
-      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("mousedown", handleInteraction);
+      document.addEventListener("keydown", handleInteraction);
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handleInteraction);
+      document.removeEventListener("keydown", handleInteraction);
     };
   }, [panelOut]);
 
