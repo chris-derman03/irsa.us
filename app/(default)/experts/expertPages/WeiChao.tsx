@@ -11,55 +11,63 @@ const WeiChao = () => {
           href="/services/accident_recon"
           label="Accident Reconstruction"
         />
-        ,
-        <RouteLink href="/services/human_factors" label="Human Factors" />, and
-        Safety Analysis to identify root causes of accidents, assess
+        , <RouteLink href="/services/human_factors" label="Human Factors" />,
+        <RouteLink href="/services/biomechanics" label="biomechanics" />, and
+        safety analysis to identify root causes of accidents, assess
         injury-prevention alternatives, and recommend safety practices and
-        procedures as they relate to post-accident evaluation. During his more
-        than two decades of service with the Institute of Risky and Safety
-        Analyses, he has been involved in over{" "}
-        <StyledList items={["2,500 forensic investigations"]} /> which have
-        included vehicle and pedestrian collisions, roadway design, signal
-        phasing, premises liability, industrial and construction safety,
-        machinery operation, design defect, OSHA violations, and code
-        requirements. In addition to providing timely consultation, Mr. Chao has
-        also assisted with{" "}
-        <StyledList items={["time-sensitive rebuttal work"]} /> against opposing
-        experts on numerous occasions.
+        procedures as they relate to post-accident evaluation. During his over
+        two decades of service with the Institute of Risk and Safety Analyses,
+        he has been involved in over 1,800 forensic investigations which have
+        included auto accidents,{" "}
+        <RouteLink href="/services/premises" label="premises liability" />,
+        industrial and construction safety, machinery operation, product defect,
+        OSHA violations, and code requirements. Mr. Chao has testified in trials
+        and depositions, and he has also assisted with rebuttal work against
+        opposing experts.
+      </p>
+
+      <p className="text-center text-xl">
+        Mr. Chao specializes in{" "}
+        <StyledList items={["accident reconstruction"]} /> and is proficient
+        with crush analysis (energy), momentum balance, video analysis, CDR data
+        analysis, drag factor assessments, critical speed yaw determinations,
+        and evaluations of traffic signal phases and timing. Furthermore, he is
+        a <StyledList items={["human factors expert"]} /> on aspects such as
+        line of sight, lighting conditions, visibility, visual cues,
+        perception-response time, and event sequencing. In terms of{" "}
+        <StyledList items={["biomechanics"]} />, Mr. Chao has conducted
+        extensive analyses regarding the forces and movements affecting human
+        body structures. Additionally, he is familiar with code compliance
+        (OSHA, ANSI, ADA, ASTM, etc.) issues and has provided expert testimony
+        in industrial machinery and product defect cases.
       </p>
 
       <p className="text-center text-xl">
         Mr. Chao’s <StyledList items={["academic", "civic contributions"]} />{" "}
-        began as early as 1995; for example, a year after the 1994 Northridge
-        earthquake, Mr. Chao researched and designed a computer-simulating model
-        of <StyledList items={["Resilient-Friction Base Isolator"]} /> to
-        prevent excessive damage to building structures during earthquakes.
-        While working as a system engineer at the{" "}
-        <StyledList items={["Fluid Research Corporation"]} /> in 1998, Mr. Chao
-        was heavily involved in design, machine configuration, research and
-        development, and quality assurance. Since the early 2000s, he has
-        actively participated in research and experiments with accelerometers
-        and compiled a <StyledList items={["study"]} /> titled “G-Force in Daily
-        Activities” (2003, updated in 2014). Mr. Chao’s extensive knowledge
-        pertaining to air-bag deployment is evident by his co-authorship of the{" "}
-        <StyledList items={["scientific book"]} /> Defining the Criteria for Air
-        Bag Activation in Passenger Vehicle (2015).
+        began as early as 1995; after the 1994 Northridge earthquake, Mr. Chao
+        researched and designed a computer-simulating model of{" "}
+        <StyledList items={["Resilient-Friction Base Isolator"]} /> to prevent
+        excessive damage to building structures during earthquakes. Since the
+        early 2000s, Mr. Chao has actively participated in research and
+        experiments with accelerometers and compiled a{" "}
+        <StyledList items={["study"]} /> titled “G-Force in Daily Activities”
+        (2003, updated in 2014). Mr. Chao’s extensive knowledge pertaining to
+        air-bag deployment is evident by his co-authorship of the{" "}
+        <StyledList items={["scientific book"]} />{" "}
+        <span className="italic">
+          Defining the Criteria for Air Bag Activation in Passenger Vehicle
+        </span>{" "}
+        (2015).
       </p>
 
       <p className="text-center text-xl">
-        For numerous <StyledList items={["major vehicle accidents"]} />, Mr.
-        Chao has presented his speed reconstruction via multiple approaches,
-        including but not limited to crush analysis (energy), momentum balance,
-        video analysis, and CDR data analysis. He has also performed{" "}
-        <StyledList items={["analyses"]} /> pertaining to line of sight,
-        visibility, visual cue, perception-response time, event sequence,
-        roadway design, and via signal-timing charts to assist with determining
-        liability issues. In some cases, he utilizes Google Earth, AutoCAD, FARO
-        3D scans, and animation software (e.g., 3D Max, FARO Reality) to prepare
-        exhibits used in trials. For industrial, machinery, construction and
-        product defect cases, Mr. Chao addresses not only code compliance (OSHA,
-        ANSI, ADA, ASTM, etc.) issues, but also presents root cause and failure
-        analysis via flow charts and Ishikawa (Fishbone) diagrams.
+        Mr. Chao is highly skilled in utilizing{" "}
+        <StyledList items={["software tools"]} /> such as Google Earth Pro,
+        AutoCAD, FARO 3D scans, and various{" "}
+        <StyledList items={["animation programs"]} />, including 3D Max, FARO
+        Reality, and Virtual Crash. He has contributed to the development of
+        numerous trial exhibit presentations, enhancing the visual
+        representation of complex case elements.
       </p>
 
       <PanelDivider />
